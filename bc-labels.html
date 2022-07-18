@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Biocultural Labels</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <style>
+        #pylode {
+            position: fixed;
+            top: 130px;
+            left: -60px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 3px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-cp,
+        .sup-cl {
+            cursor:help;
+            margin-left: 3px;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-cp {
+            color:orange;
+        }
+
+        .sup-cl {
+            color:darkred;
+        }
+
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+    </style>
+    
+    <script type="application/ld+json">
+      [
+  {
+    "@id": "https://linked.data.gov.au/def/bc-labels",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "<p>Biocultural Labels define community expectations about appropriate use of biocultural collections and data. The BC Labels focus on accurate provenance, transparency and integrity in research engagements with Indigenous communities. The BC Labels ensure Indigenous people are represented in the metadata and create opportunities for future researchers to connect and support appropriate benefit sharing.</p>"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Biocultural Labels"
+      }
+    ]
+  }
+]
+    </script>
+</head>
+<body>
+  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
+    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
+    <span style="font-size:smaller;">2.8.3</span>
+  </div>
+  <h1>Biocultural Labels</h1>
+<h3><em>A taxonomy</em></h3>
+  <section id="conceptscheme">
+      <h2 style="display:none;">Concept Scheme</h2>
+      <dl>
+          <dt>URI</dt>
+          <dd><code>https://linked.data.gov.au/def/bc-labels</code></dd>
+          <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher">Publisher</a>(s)</dt>
+          <dd>
+              
+    <a href="https://linked.data.gov.au/org/idn">Indigenous Data Network</a><br/>
+          </dd>
+            <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator">Creator</a>(s)</dt>
+          <dd>
+              
+    <a href="https://linked.data.gov.au/org/idn">Indigenous Data Network</a><br/>
+          </dd>
+          <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
+          <dd>2022-06-22</dd>
+          <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
+          <dd>2022-07-18</dd>
+          <dt>Version Information</dt>
+          <dd>1.0</dd>
+          <dt>Source</dt>
+          <dd><a href="https://localcontexts.org/labels/biocultural-labels/">https://localcontexts.org/labels/biocultural-labels/</a></dd>
+          <dt>Ontology RDF</dt>
+          <dd><a href="data_file.ttl">RDF (turtle)</a></dd>
+      </dl>
+      <h2>Description</h2>
+      <div id="description">
+          <p>Biocultural Labels define community expectations about appropriate use of biocultural collections and data. The BC Labels focus on accurate provenance, transparency and integrity in research engagements with Indigenous communities. The BC Labels ensure Indigenous people are represented in the metadata and create opportunities for future researchers to connect and support appropriate benefit sharing.</p>
+      </div>
+  </section>
+  <section id="toc">
+      <h2>Table of Contents</h2>
+      <ol>
+          <li><a href="#concepts">Concepts</a></li>
+          <li><a href="#namespaces">Namespaces</a></li>
+          <li><a href="#legend">Legend</a></li>
+      </ol>
+  </section>
+  <section id="concepts">
+    <h2>Concepts <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hierarchy">
+<li><a href="#Clan">Clan</a></li><li><a href="#ConsentNon-Verified">Consent Non-Verified</a></li><li><a href="#ConsentVerified">Consent Verified</a></li><li><a href="#MultipleCommunities">Multiple Communities</a></li><li><a href="#Non-Commercial">Non-Commercial</a></li><li><a href="#OpenToCollaboration">Open To Collaboration</a></li><li><a href="#OpenToCommercialization">Open To Commercialization</a></li><li><a href="#Outreach">Outreach</a></li><li><a href="#Provenance">Provenance</a></li><li><a href="#ResearchUse">Research Use</a></li>
+</ul>
+    <div class="entity concept" id="Clan">
+        <h3>Clan<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/clan</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label should be used when you would like external users to know that this material is subject to conditions for circulation relating to clan membership and/or is according to protocols for clan relationships.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-clan/">https://localcontexts.org/label/bc-clan/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="ConsentNon-Verified">
+        <h3>Consent Non-Verified<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/consent-non-verified</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    The consent associated with this data has not been verified by the community. Reasons for this could include that it has not been appropriately vetted, has mistakes, omissions, lack of informed consent, or its process of creation was through research which did not follow proper community protocols.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-consent-non-verified/">https://localcontexts.org/label/bc-consent-non-verified/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="ConsentVerified">
+        <h3>Consent Verified<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/consent-verified</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label verifies that there are consent conditions in place for uses of information, collections, data, and digital sequence information.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-consent-verified/">https://localcontexts.org/label/bc-consent-verified/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="MultipleCommunities">
+        <h3>Multiple Communities<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/multiple-communities</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label recognizes that whilst one community might exert specific authority, other communities also have rights and responsibilities for use and care.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-multiple-communities/">https://localcontexts.org/label/bc-multiple-communities/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="Non-Commercial">
+        <h3>Non-Commercial<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/non-commercial</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label should be used when you would like to let external users who have access to your biocultural data know that it should only be used in non-commercial ways. You are asking users to be respectful with your data and ask that it not be used to derive economic benefits or used in any way that makes it into a commodity for sale or purchase.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-non-commercial/">https://localcontexts.org/label/bc-non-commercial/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="OpenToCollaboration">
+        <h3>Open To Collaboration<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/open-to-collaboration</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label indicates that the community is open to research collaborations and outreach activities. With this Label, future opportunities for collaboration and engagement are supported.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-open-to-collaboration/">https://localcontexts.org/label/bc-open-to-collaboration/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="OpenToCommercialization">
+        <h3>Open To Commercialization<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/open-to-commercialization</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label indicates the community has an express interest in being a primary party to any future negotiations if future commercialization opportunities arise.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-open-to-commercialization/">https://localcontexts.org/label/bc-open-to-commercialization/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="Outreach">
+        <h3>Outreach<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/outreach</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label should be used when you would only like your biocultural materials and/or data used for educational outreach activities. Outreach activities means to share works outside the community in order to increase and raise awareness and education about your family, clan and/or community. Sites for outreach activities can include schools, universities, libraries, archives, museums, online forums, and small learning groups.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-outreach/">https://localcontexts.org/label/bc-outreach/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="Provenance">
+        <h3>Provenance<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/provenance</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label reflects a significant relationship and responsibility to the species or biological entity and associated scientific collections and data, and supports the practice of proper and appropriate acknowledgement into the future.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-provenance/">https://localcontexts.org/label/bc-provenance/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="ResearchUse">
+        <h3>Research Use<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://linked.data.gov.au/def/bc-labels/research-use</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    This Label should be used to permission use of information, collections, data, and digital sequence information (DSI) for unspecified research. This Label does not give permission for commercialization activities.<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Source</th>
+                <td>
+                  <a href="https://localcontexts.org/label/bc-research-use/">https://localcontexts.org/label/bc-research-use/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+  <section id="namespaces">
+    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <dl>
+        <dt>bc</dt>
+        <dd><code>https://linked.data.gov.au/def/bc-labels/</code></dd>
+        <dt>cs</dt>
+        <dd><code>https://linked.data.gov.au/def/bc-labels</code></dd>
+        <dt>dcterms</dt>
+        <dd><code>http://purl.org/dc/terms/</code></dd>
+        <dt>lc</dt>
+        <dd><code>https://linked.data.gov.au/def/lc/</code></dd>
+        <dt>owl</dt>
+        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
+        <dt>rdf</dt>
+        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
+        <dt>rdfs</dt>
+        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
+        <dt>sdo</dt>
+        <dd><code>https://schema.org/</code></dd>
+        <dt>skos</dt>
+        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
+        <dt>xsd</dt>
+        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
+    </dl>
+</section>
+
+  <section id="legend">
+    <h2>Legend</h2>
+    <table class="entity">
+      <tr><td><sup class="sup-cl" title="Collections">cl</sup></td><td>Collections</td></tr>
+      <tr><td><sup class="sup-cp" title="Concepts">cp</sup></td><td>Concepts</td></tr>
+    </table>
+  </section>
+</body>
+</html>

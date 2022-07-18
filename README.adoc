@@ -1,0 +1,31 @@
+= Local Context Labels Vocabularies
+
+This repository contains https://localcontexts.org[Local Context] labels as Semantic Web vocabularies, as used by the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)].
+
+The IDN applies Local Context labels to datasets related to indigenous people to improve dataset metadata and, ultimately, improved indigenous data governance.
+
+The two labels vocabularies, Traditional Knowledge (TK) and Biocultural (BC) Labels are online with persistent web identifiers at:
+
+* **https://linked.data.gov.au/def/tk-labels**
+* **https://linked.data.gov.au/def/bc-labels**
+
+
+
+== License & Rights
+
+The contents of this repository is licensed under Creative Commons 4.0 International. See the LICENSE file in the repository for details. Note that the underlying content of the Local Context labels has the following copyright statement at https://localhotexts.org:
+
+_Traditional Knowledge (TK) and Biocultural (BC) Labels, Notices and Template Text © 2015 - 2022 Local Contexts. All Rights Reserved._
+
+
+== Contacts
+
+Initial technical development of this work is being undertaken by the following, for the Indigenous Data Network:
+
+**Nicholas J. Car** +
+*Data Architect* +
+nick@kurrawong.net  
+
+**Sandra Silcot** +
+*Analyst* +
+Indigenous Data Network +
