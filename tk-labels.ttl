@@ -72,7 +72,7 @@ tk:clan
     rdfs:isDefinedBy cs: ;
     skos:definition "This Label should be used when you would like external users to know that this material is subject to conditions for circulation relating to clan membership and/or is according to protocols for clan relationships. Because these conditions have not historically been recognized, this Label helps make these conditions for use and circulation clearer. Specifically, the Label asks future users to respect culturally specific rules of use and to make informed decisions about using this type of material."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
-    lc:templateText ""@en ; 
+    lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."@en ; 
     skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK CL" ;
