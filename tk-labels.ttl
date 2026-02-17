@@ -88,11 +88,11 @@ tk:commercial
     rdfs:isDefinedBy cs: ;
     skos:definition "Communities have the right to benefit commercially from the information that is derived from their traditional knowledge. This Label is being used to indicate an expressed interest in being a primary party to any future negotiations if commercialization opportunities arise."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
-    lc:templateText ""@en ; 
+    lc:templateText "This Label is being used to indicate that [community name or authorized party] is open to commercialization opportunities that might derive from any cultural material with traditional knowledge to which this Label is connected to. As a primary party for any partnership and collaboration opportunities that emerge from the use of this cultural material and traditional knowledge, we retain an expressed interest in any future negotiations."@en ; 
     skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK OC" ;
-    skos:prefLabel "Commercial"@en ;
+    skos:prefLabel "Open to Commercialization"@en ;
 .
 
 tk:community-use-only
@@ -104,7 +104,7 @@ tk:community-use-only
     rdfs:isDefinedBy cs: ;
     skos:definition "This Label should be used when you would like external users to know that this material is subject to certain conditions of circulation namely that this material is usually not circulated beyond the family, clan or community. Because these conditions have not historically been recognized, this Label helps make these conditions clearer for future users. Specifically it asks them to respect culturally specific rules of use and to make different and fair decisions about using this type of material."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
-    lc:templateText ""@en ; 
+    lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for circulation within the community. It is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use."@en ; 
     skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK CO" ;
@@ -120,7 +120,7 @@ tk:community-voice
     rdfs:isDefinedBy cs: ;
     skos:definition "This Label should be used when you would like to encourage community members to share their knowledge, stories and experiences. This Label would usually be used within a community-based archive to encourage the sharing of stories. This Label indicates that the current narrative or explanation that accompanies this material is incomplete or partial and that many community voices are needed to help make sense of and understand the event, photograph, recording or heritage item. The Community Voice Label encourages multiplicity in the telling, listening and sharing of community histories and cultural knowledge."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
-    lc:templateText ""@en ; 
+    lc:templateText "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any community member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us reclaim our histories and knowledge. This sharing is an internal process."@en ; 
     skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK CV" ;
@@ -136,7 +136,7 @@ tk:creative
     rdfs:isDefinedBy cs: ;
     skos:definition "This Label should be used when an individual artist or author would like to clearly connect creative practices with traditional knowledge deriving from their own community. While an individual artist or author has standard copyright and creative commons licenses available to use, this Label helps make clear that a creative practice is also deeply connected to a collective responsibility around the use and sharing of traditional knowledge."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
-    lc:templateText ""@en ; 
+    lc:templateText "This Label is being used to acknowledge the relationship between the creative practices of [name] and [community name] and the associated cultural responsibilities."@en ; 
     skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK CR" ;
@@ -152,7 +152,7 @@ tk:culturally-sensitive
     rdfs:isDefinedBy cs: ;
     skos:definition "This Label should be used when you would like external users to know that this material has special sensitivities around it and should be treated with great care. These sensitivities could include: that it has only recently been reconnected with the community from which it originates, that the community is currently vetting and spending time with the material, and/or that the material is culturally valued and needs to be kept safe. This Label could also be used to indicate that there are cultural sensitivities around this material arising from legacies of colonialism, for instance, the use of derogatory language or descriptive errors within the content and/or content descriptions."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
-    lc:templateText ""@en ; 
+    lc:templateText "This Label is being used to indicate that this material has cultural and/or historical sensitivities. The Label asks for care to be taken when this material is accessed, used, and circulated, especially when materials are first returned or reunited with communities of origin. In some instances, this Label will indicate that there are specific permissions for use of this material required directly from the community itself."@en ; 
     skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK CS" ;
