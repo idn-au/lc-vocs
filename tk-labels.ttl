@@ -1,7 +1,8 @@
 
-PREFIX cs: <https://linked.data.gov.au/def/tk-labels>
+PREFIX cs: <https://data.idnau.org/pid/vocab/tk-labels>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX lc: <https://data.idnau.org/pid/vocab/lc-ontology#>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
