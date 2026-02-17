@@ -89,7 +89,6 @@ tk:commercial
     skos:definition "Communities have the right to benefit commercially from the information that is derived from their traditional knowledge. This Label is being used to indicate an expressed interest in being a primary party to any future negotiations if commercialization opportunities arise."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that [community name or authorized party] is open to commercialization opportunities that might derive from any cultural material with traditional knowledge to which this Label is connected to. As a primary party for any partnership and collaboration opportunities that emerge from the use of this cultural material and traditional knowledge, we retain an expressed interest in any future negotiations."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK OC" ;
     skos:prefLabel "Open to Commercialization"@en ;
@@ -193,7 +192,6 @@ tk:men-general
     skos:definition "This Label should be used when you want to let external users know that the material circulating should only be shared between men in the community. This is a Men’s General Label and indicates that there are restrictions of access and use to men based on customary law. This Label can be used to help external users recognize that with this material there are specific protocols and conditions of use. This Label is designed to recognize that some knowledge is gendered, and that certain knowledge can only be shared among specific members of the community. It should be used to complement already existing customs and protocols of access and use."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This material has specific gender restrictions on access. It is usually only to be accessed and used by men in the community. If you are not from the community and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others without permission. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK MG" ;
     skos:prefLabel "Men General"@en ;
@@ -209,7 +207,6 @@ tk:men-restricted
     skos:definition "This Label should be used when you want to let external users know that the material circulating freely is actually of a highly restricted nature. This is a Men’s Highly Restricted Label and indicates that there are restrictions of access and use based on customary law. This Label can be used to help external users recognize that with this material there are very specific protocols and conditions of use. This Label is designed to recognize that some knowledge is gendered, and that certain knowledge expressions can only be shared among specific members of the community. Only authorized [and/or initiated] men within the community should be using this material."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This material has specific gender restrictions on access. It is regarded as important secret and/or ceremonial material that has community-based laws in relation to who can access it. Given its nature it is only to be accessed and used by authorized [and/or initiated] men in the community. If you are an external third party user and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others. This material is not freely available within the community and it therefore should not be considered freely available outside of the community. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK MR" ;
     skos:prefLabel "Men Restricted"@en ;
@@ -225,7 +222,6 @@ tk:multiple-communities
     skos:definition "This Label should be used to indicate that multiple communities have responsibilities of custodianship and/or ownership over specific material. This Label recognizes that no singular community has explicit control. Rather, rights and responsibilities for use are spread across communities through already existing community protocols and ongoing cultural relationships."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "Responsibility and ownership over this material is spread across several distinct communities. Use will be dependent upon discussion and negotiation with the multiple communities named herein [insert names]. Decisions about use will need to be decided collectively. As an external user of this material you are asked to recognize and respect cultural protocols in relation to the use of this material and clear your intended use with the relevant communities."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK MC" ;
     skos:prefLabel "Multiple Communities"@en ;
@@ -257,7 +253,6 @@ tk:non-verified
     skos:definition "This material has not been verified by the community. Reasons for this could include that it has not been appropriately vetted, has mistakes, omissions, derogatory language, lack of informed consent, or its process of creation was through dishonest research which did not follow proper community protocols."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used because there are concerns about accuracy and/or representations made in this material. This material was not created through informed consent or community protocols for research and engagement. Therefore, questions about its accuracy and who/how it represents this community are being raised."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK NV" ;
     skos:prefLabel "Non-Verified"@en ;
@@ -273,7 +268,6 @@ tk:open-to-collaboration
     skos:definition "This Label is being used to indicate that the community is open to research collaborations. With this Label, future opportunities for collaboration and engagement are supported."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to make clear [community name or authorizing body] is open to future engagement, collaboration, and partnership around research opportunities."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK CB" ;
     skos:prefLabel "Open To Collaboration"@en ;
@@ -304,7 +298,6 @@ tk:seasonal
     skos:definition "This Label should be used when you want to let external users know that the material that is openly circulating has seasonal conditions of access and use. This could mean that some material should only be used and heard at particular times of the year. It could also mean that the environment and land where this material derives also influences and impacts its meaning and significance. This Label can be used to help external users know that there are land-based teachings in this material which affect proper use and respectful understanding."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material traditionally and usually is heard and/or utilized at a particular time of year and in response to specific seasonal changes and conditions. For instance, many important ceremonies are held at very specific times of the year. This Label is being used to indicate sophisticated relationships between land and knowledge creation. It is also being used to highlight the relationships between recorded material and the specific contexts where it derives, especially the interconnected and embodied teachings that it conveys."@en ;
-    skos:example ""@en ;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs:
 .
@@ -351,7 +344,6 @@ tk:women-general
     skos:definition "This Label should be used when you want to let external users know that the material circulating should only be shared between women in the community. This is a Women’s General Label and indicates that there are restrictions of access and use to women within the community based on customary law. This Label can be used to help external users recognize that with this material there are specific protocols and conditions of use. This Label is designed to recognize that some knowledge is gendered, and that certain knowledge can only be shared among specific members of the community. It should be used to complement already existing customs and protocols of access and use."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This material has specific gender restrictions on access. It is usually only to be accessed and used by women in the community. If you are not from the community and you have accessed this material, you are requested not to download, copy, remix or otherwise circulate this material to others without permission. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK WG" ;
     skos:prefLabel "Women General"@en ;
@@ -367,7 +359,6 @@ tk:women-restricted
     skos:definition "This Label should be used when you want to let external users know that the material circulating freely is actually of a highly restricted nature. This is a Women’s Highly Restricted Label and indicates that there are restrictions of access and use based on customary law. This Label can be used to help external users recognize that with this material there are very specific protocols and conditions of use. This Label is designed to recognize that some knowledge is gendered, and that certain knowledge expressions can only be shared among specific members of the community. Only authorized [and/or initiated] women within the community should be using this material."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This material has specific gender restrictions on access. It is regarded as important secret and/or ceremonial material that has community-based laws in relation to who can access it. Given its nature it is only to be accessed and used by authorized [and/or initiated] women in the community. If you are an external third party user and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others. This material is not freely available within the community and it therefore should not be considered freely available outside of the community. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ; 
-    skos:example ""@en ;
     skos:inScheme cs: ;
     skos:notation "TK WR" ;
     skos:prefLabel "Women Restricted"@en ;
