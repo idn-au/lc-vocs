@@ -1,3 +1,6 @@
+# from updated (mau not change suffixes)  skos:hasTopConcept tk:attribution , tk:clan , tk:family , tk:multicommun , tk:commvoice , tk:creative , tk:verified , tk:non-verified , tk:seasonal , tk:womengen , tk:mengen , tk:menrestrict , tk:womenrestrict , tk:cultsensitive , tk:secsac , tk:opentocom , tk:noncom , tk:comuseonly , tk:outreach , tk:opentocollab
+
+
 PREFIX cs: <https://linked.data.gov.au/def/tk-labels>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX lc: <https://linked.data.gov.au/def/lc/>
@@ -5,7 +8,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX tk: <https://linked.data.gov.au/def/tk-labels/>
+PREFIX tk: <https://data.idnau.org/pid/vocab/tk-labels/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
@@ -13,11 +16,11 @@ cs:
     dcterms:created "2022-06-22"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/idn> ;
     dcterms:identifier "tk"^^xsd:token ;
-    dcterms:modified "2022-06-22"^^xsd:date ;
+    dcterms:modified "2026-02-17"^^xsd:date ;
     dcterms:provenance "This vocabulary was generated from the https://localcontexts.org website's content: https://localcontexts.org/labels/traditional-knowledge-labels/" ;
     dcterms:publisher <https://linked.data.gov.au/org/idn> ;
     dcterms:source "https://localcontexts.org/labels/traditional-knowledge-labels/"^^xsd:anyURI ;
-    owl:versionInfo "1.0"^^xsd:string ;
+    owl:versionInfo "1.1"^^xsd:string ;
     skos:definition "Traditional Knowledge (TK) labels \"support the inclusion of local protocols for access and use to cultural heritage that is digitally circulating outside community contexts\". This vocabulary is a SKOS-based listing of those labels so they can be accessed in RDF graph-based systems."@en ;
     skos:hasTopConcept
         tk:attribution ,
@@ -50,17 +53,17 @@ cs:
 .
 
 tk:attribution
-    a
-        skos:Concept ,
-        lc:TKLabel ;
-    dcterms:identifier "attribution"^^xsd:token ;
-    dcterms:source "https://localcontexts.org/label/tk-attribution/"^^xsd:anyURI ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "This Label should be used when you would like anyone who uses this material to know who the correct sources, custodians, or owners are. This is especially useful if this material has been wrongly attributed or important names of the people involved in making this material or safeguarding this material, are missing. This Label allows you to correct historical mistakes in terms of naming and acknowledging the legitimate authorities for this material. This Label asks for future users to also apply the correct names and attribution."@en ;
-    skos:inScheme cs: ;
-    skos:notation "TK A" ;
+    a lc:TKLabel, skos:Concept , odrl:Policy ;
     skos:prefLabel "Attribution"@en ;
-.
+    dcterms:identifier "attribution"^^xsd:token ;
+    skos:notation "TK A" ;
+    schema:citation "https://localcontexts.org/label/tk-attribution/"^^xsd:anyURI ;
+    skos:definition "This Label should be used when you would like anyone who uses this material to know who the correct sources, custodians, or owners are. This is especially useful if this material has been wrongly attributed or important names of the people involved in making this material or safeguarding this material, are missing. This Label allows you to correct historical mistakes in terms of naming and acknowledging the legitimate authorities for this material. This Label asks for future users to also apply the correct names and attribution."@en ;
+    skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
+    lc:templateText "This Label is being used to correct historical mistakes or exclusions pertaining to this material. This is especially in relation to the names of the people involved in performing or making this work and/or correctly naming the community from which it originally derives. As a user you are being asked to also apply the correct attribution in any future use of this work."@en ; 
+    skos:example "Photo by the Warumungu community, Tennant Creek"@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: .
 
 tk:clan
     a
@@ -245,16 +248,17 @@ tk:outreach
 .
 
 tk:seasonal
-    a
-        skos:Concept ,
-        lc:TKLabel ;
-    dcterms:identifier "seasonal"^^xsd:token ;
-    dcterms:source "https://localcontexts.org/label/tk-seasonal/"^^xsd:anyURI ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "This Label should be used when you want to let external users know that the material that is openly circulating has seasonal conditions of access and use. This could mean that some material should only be used and heard at particular times of the year. It could also mean that the environment and land where this material derives also influences and impacts its meaning and significance. This Label can be used to help external users know that there are land-based teachings in this material which affect proper use and respectful understanding."@en ;
-    skos:inScheme cs: ;
-    skos:notation "TK S" ;
+    a lc:TKLabel, skos:Concept , odrl:Policy ;
     skos:prefLabel "Seasonal"@en ;
+    dcterms:identifier "seasonal"^^xsd:token ;
+    skos:notation "TK S" ;
+    schema:citation "https://localcontexts.org/label/tk-seasonal/"^^xsd:anyURI ;
+    skos:definition "This Label should be used when you want to let external users know that the material that is openly circulating has seasonal conditions of access and use. This could mean that some material should only be used and heard at particular times of the year. It could also mean that the environment and land where this material derives also influences and impacts its meaning and significance. This Label can be used to help external users know that there are land-based teachings in this material which affect proper use and respectful understanding."@en ;
+    skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
+    lc:templateText "This Label is being used to indicate that this material traditionally and usually is heard and/or utilized at a particular time of year and in response to specific seasonal changes and conditions. For instance, many important ceremonies are held at very specific times of the year. This Label is being used to indicate sophisticated relationships between land and knowledge creation. It is also being used to highlight the relationships between recorded material and the specific contexts where it derives, especially the interconnected and embodied teachings that it conveys."@en ;
+    skos:example "This practice is connected to the flowering of wattle in late winter."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs:
 .
 
 tk:secret-sacred
