@@ -73,7 +73,7 @@ tk:clan
     skos:definition "This Label should be used when you would like external users to know that this material is subject to conditions for circulation relating to clan membership and/or is according to protocols for clan relationships. Because these conditions have not historically been recognized, this Label helps make these conditions for use and circulation clearer. Specifically, the Label asks future users to respect culturally specific rules of use and to make informed decisions about using this type of material."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."@en ; 
-    skos:example ""@en ;
+    skos:example "This Label is being used to indicate that this material has specific conditions for sharing, and this responsibility sits with hapū members within Te Whakatohea who are the primary kaitiaki/ authority. Who those hapū members are, and how how shareing occurs will be defined in each locale. This Label asks viewers of these materials to respect the Mātauranga-ā-hapū cultural values and expectations about circulation and use defined by designated hapū members, and their internal relations"@en ;
     skos:inScheme cs: ;
     skos:notation "TK CL" ;
     skos:prefLabel "Clan"@en ;
@@ -105,7 +105,7 @@ tk:community-use-only
     skos:definition "This Label should be used when you would like external users to know that this material is subject to certain conditions of circulation namely that this material is usually not circulated beyond the family, clan or community. Because these conditions have not historically been recognized, this Label helps make these conditions clearer for future users. Specifically it asks them to respect culturally specific rules of use and to make different and fair decisions about using this type of material."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for circulation within the community. It is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use."@en ; 
-    skos:example ""@en ;
+    skos:example "This Label is being used to indicate that this taonga is not, and never was, free, public or available for everyone at anytime. The Label indicates that there are protocols and permissions for use and ahs specific conditions for circulation within Te Whakatohea. This materia should only be used by Te Whakatohea or with express permission of the Te Taurmata Kaumātua"@en ;
     skos:inScheme cs: ;
     skos:notation "TK CO" ;
     skos:prefLabel "Community Use Only"@en ;
@@ -121,7 +121,7 @@ tk:community-voice
     skos:definition "This Label should be used when you would like to encourage community members to share their knowledge, stories and experiences. This Label would usually be used within a community-based archive to encourage the sharing of stories. This Label indicates that the current narrative or explanation that accompanies this material is incomplete or partial and that many community voices are needed to help make sense of and understand the event, photograph, recording or heritage item. The Community Voice Label encourages multiplicity in the telling, listening and sharing of community histories and cultural knowledge."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any community member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us reclaim our histories and knowledge. This sharing is an internal process."@en ; 
-    skos:example ""@en ;
+    skos:example "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any Te Whakatohea iwi member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us Indigenise Te Whakatohea histories and knowledge. This sharing is an internal process. "@en ;
     skos:inScheme cs: ;
     skos:notation "TK CV" ;
     skos:prefLabel "Community Voice"@en ;
@@ -137,7 +137,7 @@ tk:creative
     skos:definition "This Label should be used when an individual artist or author would like to clearly connect creative practices with traditional knowledge deriving from their own community. While an individual artist or author has standard copyright and creative commons licenses available to use, this Label helps make clear that a creative practice is also deeply connected to a collective responsibility around the use and sharing of traditional knowledge."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to acknowledge the relationship between the creative practices of [name] and [community name] and the associated cultural responsibilities."@en ; 
-    skos:example ""@en ;
+    skos:example "This Label is being used to acknowledge the relationship between the creative practices of the artists or arti, Te Whakatohea and the associated cultural responsibilities. Te Whakatohea ask that as a user you appl the correct attribution in any future use of this work. Acknowledge all information sources to ensure the mana and integrity of the works, the artists and Te Whakatohea is upheld."@en ;
     skos:inScheme cs: ;
     skos:notation "TK CR" ;
     skos:prefLabel "Creative"@en ;
@@ -175,7 +175,9 @@ tk:family
     skos:definition "This Label should be used when you would like external users to know that this material is subject to certain conditions for circulation. This material is usually only shared between family members. Because these conditions have not historically been recognized, this Label helps make these conditions clearer for future users. Specifically it asks them to respect culturally specific rules of use and to make different and fair decisions about using this type of material."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for sharing between family members. Who these family members are, and how sharing occurs will be defined in each locale. This material is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use."@en ; 
-    skos:example ""@en ;
+    skos:example """Family is core tenet within Musqueam teachings. Certain families havevspecific cultural knowledge that is not generally shared with everyone. Families may designate a certain member to be the contact for the access to and circulation of cultural knowledge and material.
+
+If you have questions or wish to do research with a specific family please contact [contact details] and view the research permitting process here [weblink]."""@en ;
     skos:inScheme cs: ;
     skos:notation "TK F" ;
     skos:prefLabel "Family"@en ;
@@ -302,7 +304,7 @@ tk:seasonal
     skos:definition "This Label should be used when you want to let external users know that the material that is openly circulating has seasonal conditions of access and use. This could mean that some material should only be used and heard at particular times of the year. It could also mean that the environment and land where this material derives also influences and impacts its meaning and significance. This Label can be used to help external users know that there are land-based teachings in this material which affect proper use and respectful understanding."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material traditionally and usually is heard and/or utilized at a particular time of year and in response to specific seasonal changes and conditions. For instance, many important ceremonies are held at very specific times of the year. This Label is being used to indicate sophisticated relationships between land and knowledge creation. It is also being used to highlight the relationships between recorded material and the specific contexts where it derives, especially the interconnected and embodied teachings that it conveys."@en ;
-    skos:example "This practice is connected to the flowering of wattle in late winter."@en ;
+    skos:example ""@en ;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs:
 .
