@@ -317,7 +317,7 @@ tk:secret-sacred
     skos:definition "This Label should be used when you want to let external users know that the material that is openly circulating contains secret/sacred information and that it has specific conditions of access and use. These conditions potentially include restrictions upon access. Using this Label helps to alert external users that this material is special and requires respectful and careful treatment. It asks users to make different decisions about using it and, importantly, to discuss any potential use with you."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available because it contains important secret or sacred components. The Label is correcting a misunderstanding about the significance of this material and therefore its circulation conditions. It is letting users know that because of its secret/sacred status it is not, and was never free, public, or available for everyone at anytime. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ; 
-    skos:example ""@en ;
+    skos:example "In our Stό:lō culture, certain types of knowledge are restricted in some way. They are considered sacred, secret, potent and/or private, and only certain people or families can and should have access to them. We call this xa:xa in our language. This label indicates that there is additional knowledge about a certain subject that cannot be shared on the website."@en ;
     skos:inScheme cs: ;
     skos:notation "TK SS" ;
     skos:prefLabel "Secret / Sacred"@en ;
@@ -333,7 +333,7 @@ tk:verified
     skos:definition "This Label should be used when you and your community are satisfied with the way in which your traditional knowledge materials are being represented online or offline. This Label affirms that appropriate conditions for access and use are in place and that whoever has made this material accessible has made accommodations for cultural protocols associated with the knowledge. It lets users know that the right thing is being done by your community protocols and standards."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label affirms that the representation and presentation of this material is in keeping with community expectations and cultural protocols. It lets you know that for the individual, family or community represented in this material, use is considered fair, reasonable and respectful."@en ; 
-    skos:example ""@en ;
+    skos:example "The knowledge presented on this website was created through a community decision-making process directed by our Elders. The verified label acknowledges that this knowledge was produced through ‘correct work’ in our language, iyólem syó:ys, and has been approved by our community as a whole."@en ;
     skos:inScheme cs: ;
     skos:notation "TK V" ;
     skos:prefLabel "Verified"@en ;
