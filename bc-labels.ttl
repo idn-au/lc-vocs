@@ -40,6 +40,47 @@ bscs:
     sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network"^^xsd:anyURI ;
 .
 
+bc:collection-provenance
+    a skos:Collection ;
+    skos:member 
+      bc:clan ,
+      bc:provenance ,
+      bc:multiple-communities ; 
+    skos:inSchme bccs: ;
+    sdo:citation "https://localcontexts.org/labels/biocultural-labels/"^^xsd:anyURI ;
+    skos:prefLabel "Biocultural Provenance Labels Collection" ;
+    skos:definition "Collection of Biocultural Labels that identify the group or sub-group which is the primary cultural authority for the material, and/or recognizes other interest in the materials."@en ;
+    dcterms:created "2026-02-18"^^xsd:date
+.
+
+bc:collection-protocol
+    a skos:Collection ;
+    skos:member 
+      bc:consent-verified ,
+      bc:consent-non-verified ;
+    skos:inSchme bccs: ;
+    sdo:citation "https://localcontexts.org/labels/biocultural-labels/"^^xsd:anyURI ;
+    skos:prefLabel "Biocultural Protocol Labels Collection" ;
+    skos:definition "Collection of Biocultural Labels that outline traditional protocols associated with access to this material and invite viewers to respect community protocols."@en ;
+    dcterms:created "2026-02-18"^^xsd:date
+.
+
+bc:collection-permission
+    a skos:Collection ;
+    skos:member 
+      bc:research-use ,
+      bc:non-commercial ,
+      bc:open-to-commercialization ,
+      bc:open-to-collaboration ,
+      bc:outreach ;
+    skos:inSchme bccs: ;
+    sdo:citation "https://localcontexts.org/labels/biocultural-labels/"^^xsd:anyURI ;
+    skos:prefLabel "Biocultural Permission Labels Collection" ;
+    skos:definition "Collection of Biocultural Labels that indicate what activities the community has approved as generally acceptable. Other uses require direct engagement with primary cultural authorities."@en ;
+    dcterms:created "2026-02-18"^^xsd:date
+.
+
+
 bc:provenance
     a lcont:BCLabel, skos:Concept , odrl:Policy ;
     skos:prefLabel "Provenance"@en ;
