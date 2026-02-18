@@ -95,7 +95,7 @@ bc:consent-verified
     rdfs:isDefinedBy bccs: ;
     skos:definition "Indigenous peoples have the right to permission the use of information, biological collections, data, and digital sequence information (DSI) that derives from associated lands, waters and territories. This Label verifies that there are consent conditions in place for uses of information, collections, data, and digital sequence information."@en ;
     lcont:templateText "This Label is being used to verify that [community name or authorizing party] have consent conditions in place for the use of this information, collections, data, and digital sequence information. [These can be found at ….]."@en ;  
-    skos:example ""@en ; 
+    skos:example "This Label is being used to verify that the Kichwa Indigenous People of Sarayaku, their protective beings, nature, and territory have the appropriate conditions of consent regarding the use of this information, collection, data and digital sequence information. Such verification can be found as part of the research process carried out by the Kichwa Indigenous People of Sarayaku, their protectors, nature, and territory for the research related to the mushrooms and their mycorrhizal networks that live in the Sarayaku territory."@en ; 
     skos:inScheme bccs: ;
     skos:notation "BC CV" ;
     skos:prefLabel "Consent Verified"@en ;
@@ -127,7 +127,7 @@ bc:research-use
     lcont:templateText """This Label is being used by [community name or authorizing body] to allow this information, collection, data, and digital sequence information (DSI) to be used for unspecified research purposes. This Label does not provide permission for commercialization activities.
 
 [Optional return of research results statement]"""@en ;    
-    skos:example ""@en ; 
+    skos:example "This Label is being used by the Kichwa Indigenous People of Sarayaku, their protective beings, nature, and territory to recognize that they allow the use of this information, data and digital sequence information for non-specific research purposes. However any specific use should be accepted, recognized, and validated by the Governing Council of the Kichwa Indigenous People of Sarayaku. This Label does not provide permission for commercial activities. Anyone interested in accessing this information should contact the Governing Council of the Kichwa Indigenous People of Sarayaku and obtain the consent of the Sarayaku People."@en ; 
     skos:inScheme bccs: ;
     skos:notation "BC R" ;
     skos:prefLabel "Research Use"@en ;
@@ -142,7 +142,7 @@ bc:open-to-collaboration
     rdfs:isDefinedBy bccs: ;
     skos:definition "This Label is being used to indicate that the community is open to research collaborations and outreach activities. With this Label, future opportunities for collaboration and engagement are supported."@en ;
     lcont:templateText "This Label is being used to make clear [community name or authorizing body] is open to future engagement, collaboration, and partnership around research and outreach opportunities."@en ;
-    skos:example ""@en ; 
+    skos:example "The Kichwa Indigenous People of Sarayaku, their protectors, nature, and territory are willing to collaborate with external actors in projects or activities related to this information. However, any type of collaboration and use of this information must be done with the consent of the Governing Council of the Kichwa Indigenous People of Sarayaku, their protectors, nature, and territory."@en ; 
     skos:inScheme bccs: ;
     skos:notation "BC CB" ;
     skos:prefLabel "Open To Collaboration"@en ;
@@ -157,7 +157,7 @@ bc:open-to-commercialization
     rdfs:isDefinedBy bccs: ;
     skos:definition "Indigenous peoples have the right to benefit from information, biological collections, data, and digital sequence information (DSI) that derives from traditional lands, waters and territories. This Label is being used to indicate an express interest in being a primary party to any future negotiations if future commercialization opportunities arise."@en ;
     lcont:templateText "This Label is being used to indicate that [community name or authorizing party] is open to commercialization opportunities that might derive from any information, collections, data, and digital sequence information (DSI) to which this Label is connected. As a primary party in any partnership and collaboration opportunity that emerges from the use of these resources, we retain an express interest in any future negotiations."@en ;
-    skos:example ""@en ; 
+    skos:example "This Label is being used to indicate that Whakatohea is open to commercialisation opportunities that might derive from any information, biocultural materials and data including DSI to which this Label is connected. Whakatohea assert our right to participate in discussions and commercialisation of this taonga."@en ; 
     skos:inScheme bccs: ;
     skos:notation "BC OC" ;
     skos:prefLabel "Open To Commercialization"@en ;
