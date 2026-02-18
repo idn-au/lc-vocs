@@ -192,3 +192,13 @@ bc:non-commercial
     skos:notation "BC NC" ;
     skos:prefLabel "Non-Commercial"@en ;
 .
+
+# to do: add below to <https://data.idnau.org/pid/lc-ont/>
+
+odrl:Permission
+	a rdfs:Class , owl:Class, skos:Concept ;
+	rdfs:isDefinedBy odrl: ;
+	rdfs:subClassOf odrl:Rule ;
+	owl:disjointWith odrl:Prohibition, odrl:Duty ;
+	rdfs:label "Permission"@en ;
+	skos:definition "The ability to perform an Action over an Asset."@en .
