@@ -119,7 +119,7 @@ bc:consent-non-verified
 bc:research-use
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel , odrl:Permission ;
     dcterms:identifier "research-use"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-research-use/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
@@ -136,7 +136,7 @@ bc:research-use
 bc:open-to-collaboration
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel , odrl:Permission ;
     dcterms:identifier "open-to-collaboration"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-open-to-collaboration/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
@@ -151,7 +151,7 @@ bc:open-to-collaboration
 bc:open-to-commercialization
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel , odrl:Permission ;
     dcterms:identifier "open-to-commercialization"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-open-to-commercialization/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
@@ -166,7 +166,7 @@ bc:open-to-commercialization
 bc:outreach
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel , odrl:Permission ;
     dcterms:identifier "outreach"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-outreach/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
@@ -181,7 +181,7 @@ bc:outreach
 bc:non-commercial
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel , odrl:Permission ;
     dcterms:identifier "non-commercial"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-non-commercial/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
