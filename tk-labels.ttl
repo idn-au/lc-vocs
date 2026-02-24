@@ -285,6 +285,10 @@ tk:outreach
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material can be used for educational outreach activities. This Label asks you to respect the designated circulation conditions for this material and additionally, where possible, to develop a means for fair and equitable reciprocal exchange for the use of this material with the relevant TK holders. This exchange might include access to educational or other resources that are difficult to access under normal circumstances."@en ; 
     skos:example "Certain material has been identified by Passamaquoddy tribal members and can be used and shared for educational purposes. Ekehkimkewey means 'educational'. The Passamaquoddy Tribe is a present day community that retains cultural authority over its heritage. This Label is being used to teach and share cultural knowledge and histories and to raise greater awareness and respect for Passamaquoddy culture and worldviews. If you want further advice about using any material that has this Label, please contact: [contact details]"@en ;
+    odrl:permission 
+      [a odrl:Permission ;
+         odrl:purpose "Educational use"@en .
+         ] ;
     skos:inScheme cs: ;
     skos:notation "TK O" ;
     skos:prefLabel "Outreach"@en ;
