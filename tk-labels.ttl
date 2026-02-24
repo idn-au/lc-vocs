@@ -1,5 +1,6 @@
 
 PREFIX cs: <https://data.idnau.org/pid/vocab/tk-labels>
+PREFIX cc: <http://creativecommons.org/ns#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX lc: <https://data.idnau.org/pid/vocab/lc-ontology#>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
@@ -61,7 +62,12 @@ tk:attribution
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to correct historical mistakes or exclusions pertaining to this material. This is especially in relation to the names of the people involved in performing or making this work and/or correctly naming the community from which it originally derives. As a user you are being asked to also apply the correct attribution in any future use of this work."@en ; 
     skos:example "When using anything that has this Label, please use the correct attribution. This may include individual Passamaquoddy names, it may include Passamaquoddy as the correct cultural affiliation or it may include Passamaquoddy Tribe as the tribal designation. If you want further advice about using any material that has this Label, please contact: [contact details]"@en ;
-    skos:inScheme cs: ;
+    odrl:attribute 
+       [ a cc:Attribution ;
+          odrl:attributedParty "custodians, or owners"@en ;
+          dcterms:description "attribute the correct sources, custodians, or owners"@en .
+        ] ;
+skos:inScheme cs: ;
     rdfs:isDefinedBy cs: .
 
 tk:clan
@@ -76,6 +82,12 @@ tk:clan
     lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."@en ; 
     skos:example "This Label is being used to indicate that this material has specific conditions for sharing, and this responsibility sits with hapū members within Te Whakatohea who are the primary kaitiaki/ authority. Who those hapū members are, and how how shareing occurs will be defined in each locale. This Label asks viewers of these materials to respect the Mātauranga-ā-hapū cultural values and expectations about circulation and use defined by designated hapū members, and their internal relations"@en ;
     skos:inScheme cs: ;
+    odrl:permission 
+      [a odrl:Permission ;
+         odrl:purpose odrl:grantUse ;
+         odrl:assignee "clan"@en ; 
+         dcterms:description "material circulating may be shared between clan members and/or according to protocols for clan relationships."@en .
+         ] ;
     skos:notation "TK CL" ;
     skos:prefLabel "Clan"@en ;
 .
@@ -112,9 +124,17 @@ tk:community-use-only
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for circulation within the community. It is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use."@en ; 
     skos:example "This Label is being used to indicate that this taonga is not, and never was, free, public or available for everyone at anytime. The Label indicates that there are protocols and permissions for use and ahs specific conditions for circulation within Te Whakatohea. This materia should only be used by Te Whakatohea or with express permission of the Te Taurmata Kaumātua"@en ;
+    odrl:permission 
+      [a odrl:Permission ;
+         odrl:purpose odrl:grantUse ;
+         odrl:assignee "community"@en ; 
+         dcterms:description "material circulating may be shared between family, clan or community."@en .
+         ] ;
     skos:inScheme cs: ;
+    skos:topConceptOf cs: ;
     skos:notation "TK CO" ;
     skos:prefLabel "Community Use Only"@en ;
+    skos:narrower tk:clan , tk:ccommunity , tk:family
 .
 
 tk:community-voice
@@ -128,6 +148,11 @@ tk:community-voice
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any community member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us reclaim our histories and knowledge. This sharing is an internal process."@en ; 
     skos:example "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any Te Whakatohea iwi member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us Indigenise Te Whakatohea histories and knowledge. This sharing is an internal process. "@en ;
+    odrl:share 
+       [ a odrl:Action ;
+          odrl:assignee "community members" ;
+          dctersm:description "community members are encouraged to share their knowledge, stories and experiences"@en ;
+        ] ;
     skos:inScheme cs: ;
     skos:notation "TK CV" ;
     skos:prefLabel "Community Voice"@en ;
@@ -241,9 +266,9 @@ tk:multiple-communities
     skos:definition "This Label should be used to indicate that multiple communities have responsibilities of custodianship and/or ownership over specific material. This Label recognizes that no singular community has explicit control. Rather, rights and responsibilities for use are spread across communities through already existing community protocols and ongoing cultural relationships."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lc:templateText "Responsibility and ownership over this material is spread across several distinct communities. Use will be dependent upon discussion and negotiation with the multiple communities named herein [insert names]. Decisions about use will need to be decided collectively. As an external user of this material you are asked to recognize and respect cultural protocols in relation to the use of this material and clear your intended use with the relevant communities."@en ; 
-    odrl:attributedParty [
+    odrl:attribute [
         a cc:Attribution ;
-        odrl:assignee "multiple communities"@en ; 
+        odrl:attributedParty "multiple communities"@en ; 
         dcterms:description "multiple communities have responsibilities of custodianship and/or ownership over specific material"@en .
          ] ;
 skos:inScheme cs: ;
