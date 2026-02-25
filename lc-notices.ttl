@@ -4,7 +4,7 @@ PREFIX idn: <https://linked.data.gov.au/org/idn>
 PREFIX lcn: <https://data.idnau.org/pid/vocab/lc-notices/>
 PREFIX lcncs: <https://data.idnau.org/pid/vocab/lc-notices>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX lcont: <https://data.idnau.org/pid/lc-ont/>
+PREFIX lcont: <https://data.idnau.org/pid/lc-ont#>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
