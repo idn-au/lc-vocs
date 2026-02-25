@@ -1,7 +1,7 @@
 PREFIX cs: <https://data.idnau.org/pid/vocab/tk-labels>
 PREFIX cc: <http://creativecommons.org/ns#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX lcont: <https://data.idnau.org/pid/vocab/lc-ontology#>
+PREFIX lcont: <https://data.idnau.org/pid/vocab/lc-ont#>
 PREFIX lcn: <https://data.idnau.org/pid/vocab/lc-notices/>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -108,7 +108,7 @@ tk:commercial
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to indicate that [community name or authorized party] is open to commercialization opportunities that might derive from any cultural material with traditional knowledge to which this Label is connected to. As a primary party for any partnership and collaboration opportunities that emerge from the use of this cultural material and traditional knowledge, we retain an expressed interest in any future negotiations."@en ; 
     skos:inScheme cs: ;
-    odrl:relatedNotice lcn:open-to-collaborate ;
+    lcont:relatedNotice lcn:open-to-collaborate ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -314,7 +314,7 @@ tk:non-commercial
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This material has been designated as being available for non-commercial use. You are allowed to use this material for non-commercial purposes including for research, study, or public presentation and/or online in blogs or non-commercial websites. This Label asks you to think and act with fairness and responsibility towards this material and the original custodians."@en ; 
     skos:example "This Label indicates that this material should not be used in any commercial ways, including ways that derive profit from sale or production for non-Passamaquoddy people. The name of this Label Ma yut monuwasiw means ‘this is not to be sold/purchased’. If you are unsure if your use is non-commercial, please contact: [contact details]"@en ;
-    odrl:relatedNotice lcn:open-to-collaborate ;
+    lcont:relatedNotice lcn:open-to-collaborate ;
     odrl:prohibition 
       [a odrl:Prohibition ;
          odrl:purpose odrl:prohibit ;
@@ -352,7 +352,7 @@ tk:open-to-collaboration
     skos:definition "This Label is being used to indicate that the community is open to research collaborations. With this Label, future opportunities for collaboration and engagement are supported."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to make clear [community name or authorizing body] is open to future engagement, collaboration, and partnership around research opportunities."@en ; 
-    odrl:relatedNotice lcn:open-to-collaborate ;
+    lcont:relatedNotice lcn:open-to-collaborate ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -374,7 +374,7 @@ tk:outreach
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material can be used for educational outreach activities. This Label asks you to respect the designated circulation conditions for this material and additionally, where possible, to develop a means for fair and equitable reciprocal exchange for the use of this material with the relevant TK holders. This exchange might include access to educational or other resources that are difficult to access under normal circumstances."@en ; 
     skos:example "Certain material has been identified by Passamaquoddy tribal members and can be used and shared for educational purposes. Ekehkimkewey means 'educational'. The Passamaquoddy Tribe is a present day community that retains cultural authority over its heritage. This Label is being used to teach and share cultural knowledge and histories and to raise greater awareness and respect for Passamaquoddy culture and worldviews. If you want further advice about using any material that has this Label, please contact: [contact details]"@en ;
-    odrl:relatedNotice lcn:open-to-collaborate ;
+    lcont:relatedNotice lcn:open-to-collaborate ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
