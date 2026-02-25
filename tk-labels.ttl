@@ -46,6 +46,9 @@ cs:
     skos:prefLabel "Traditional Knowledge Labels"@en ;
 .
 
+# to do: skos:Collection s based on policy refinements: permission, attribute, share, prohibition, duty
+# to do: tk:creative , tk:culturally-sensitive , tk:non-verified , tk:verified , 
+
 <https://linked.data.gov.au/org/idn>
     a sdo:Organization ;
     sdo:name "Indigenous Data Network" ;
@@ -191,6 +194,14 @@ Tla'amin teachings, laws, and practices that flow from them are subject to the �
 Other parts of the book are labelled “ʔəms naʔ” because the ongoing nature of settler colonialism means that the histories discussed here are not part of a distant past. For close to a century, colonial laws and policies prevented community members from sharing teachings freely in their community without fear of punishment or retribution, imposing silences that remain even today. Thus this label also applies to chapters that discuss the genocidal practices that sought to interrupt the transmission of teachings and to sever Tla'amin sovereign rights to their territory.
 
 Please treat information and photographs marked with this label with special care, especially if you plan to share them with others."""@en ;
+#######
+# WIP
+######
+#    odrl:inform
+#       [ a ordr:Action 
+#           odrl:assignee "external users"@en ;
+#           odrl:purpose 
+#          ] ;
     skos:inScheme cs: ;
     skos:notation "TK CS" ;
     skos:prefLabel "Culturally Sensitive"@en ;
@@ -209,6 +220,12 @@ tk:family
     skos:example """Family is core tenet within Musqueam teachings. Certain families havevspecific cultural knowledge that is not generally shared with everyone. Families may designate a certain member to be the contact for the access to and circulation of cultural knowledge and material.
 
 If you have questions or wish to do research with a specific family please contact [contact details] and view the research permitting process here [weblink]."""@en ;
+    odrl:permission 
+      [a odrl:Permission ;
+         odrl:purpose odrl:grantUse ;
+         odrl:assignee "family"@en ; 
+         dcterms:description "material circulating may be shared between family."@en .
+         ] ;
     skos:inScheme cs: ;
     skos:notation "TK F" ;
     skos:prefLabel "Family"@en ;
@@ -387,7 +404,8 @@ tk:secret-sacred
     odrl:duty 
       [a odrl:Duty ;
          odrl:purpose odrl:obtainConsent
-         dcterms:description "potential use of materials shall be discussed"@en ;
+         odrl:assignee "external users"@en ;
+         dcterms:description "external users shall discuss potential use of materials"@en ;
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK SS" ;
@@ -426,7 +444,7 @@ tk:women-general
          odrl:assignee "women in the community"@en ; 
          dcterms:description "material circulating may be shared between women in the community"@en .
          ] ;
-skos:inScheme cs: ;
+    skos:inScheme cs: ;
     skos:notation "TK WG" ;
     skos:prefLabel "Women General"@en ;
 .
