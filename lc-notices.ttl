@@ -85,9 +85,11 @@ lcn:collection-collections-care
 lcn:bc-notice
    a lcont:LCNotice, skos:Concept , odrl:Policy ;
     skos:prefLabel "BC Notice"@en ;
-    skos:definition ""@en ;
+    skos:definition "The BC Notice should be used to recognize the rights of Indigenous Peoples to permission the use of information, collections, data and digital sequence information generated from the biodiversity and genetic resources associated with their traditional lands, waters, and territories. It acknowledges the importance of cultural protocols and recognizes that appropriate permissions may need to be sought for future use of this material or data."@en ;
     dcterms:identifier "bc-notice"^^xsd:token ;
-    lcont:templateText ""@en ;
+    lcont:templateText """The BC (Biocultural) Notice is a visible notification that there are accompanying cultural rights and responsibilities that need further attention for any future sharing and use of this material or data. The BC Notice recognizes the rights of Indigenous Peoples to permission the use of information, collections, data and digital sequence information (DSI) generated from the biodiversity or genetic resources associated with traditional lands, waters, and territories. The BC Notice may indicate that BC Labels are in development and their implementation is being negotiated.
+
+[Optional BC Notice use statement]"""@en ;
     sdo:citation "https://localcontexts.org/notice/bc-notice/"^^xsd:anyURI ;
     skos:inScheme lcncs: ;
     skos:topConceptOf lcncs: ;
@@ -98,9 +100,7 @@ lcn:tk-notice
     skos:prefLabel "TK Notice"@en ;
     skos:definition "This Notice should be used to recognize that place-based knowledge carries accompanying cultural rights and responsibilities and that appropriate permissions may need to be sought for future use of this material."@en ;
     dcterms:identifier "tk-notice"^^xsd:token ;
-    lcont:templateText """The BC (Biocultural) Notice is a visible notification that there are accompanying cultural rights and responsibilities that need further attention for any future sharing and use of this material or data. The BC Notice recognizes the rights of Indigenous Peoples to permission the use of information, collections, data and digital sequence information (DSI) generated from the biodiversity or genetic resources associated with traditional lands, waters, and territories. The BC Notice may indicate that BC Labels are in development and their implementation is being negotiated.
-
-[Optional BC Notice use statement]"""@en ;
+    lcont:templateText "The TK Notice is a visible notification that there are accompanying cultural rights and responsibilities that need further attention for any future sharing and use of this material. The TK Notice may indicate that TK Labels are in development and their implementation is being negotiated."@en ;
     sdo:citation "https://localcontexts.org/notice/tk-notice/"^^xsd:anyURI ;
     skos:inScheme lcncs: ;
     skos:topConceptOf lcncs: ;
