@@ -1,5 +1,4 @@
-
-PREFIX cs: <https://data.idnau.org/pid/vocab/tk-labels>
+PREFIX cs: <https://data.idnau.org/pid/vocab/tk-labels/>
 PREFIX cc: <http://creativecommons.org/ns#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX lc: <https://data.idnau.org/pid/vocab/lc-ontology#>
@@ -67,10 +66,10 @@ tk:attribution
     skos:example "When using anything that has this Label, please use the correct attribution. This may include individual Passamaquoddy names, it may include Passamaquoddy as the correct cultural affiliation or it may include Passamaquoddy Tribe as the tribal designation. If you want further advice about using any material that has this Label, please contact: [contact details]"@en ;
     odrl:attribute 
        [ a cc:Attribution ;
-          odrl:attributedParty "custodians, or owners"@en ;
+          odrl:attributedParty "custodians or owners"@en ;
           dcterms:description "attribute the correct sources, custodians, or owners"@en .
         ] ;
-skos:inScheme cs: ;
+    skos:inScheme cs: ;
     rdfs:isDefinedBy cs: .
 
 tk:clan
