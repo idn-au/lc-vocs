@@ -1,3 +1,5 @@
+PREFIX bc: <https://data.idnau.org/pid/vocab/bc-labels/>
+PREFIX bccs: <https://data.idnau.org/pid/vocab/bc-labels>
 PREFIX idn: <https://linked.data.gov.au/org/idn>
 PREFIX lcn: <https://data.idnau.org/pid/vocab/lc-notices/>
 PREFIX lcncs: <https://data.idnau.org/pid/vocab/lc-notices>
@@ -8,7 +10,9 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tk: <https://data.idnau.org/pid/vocab/tk-labels/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
 
 
 lcncs:
@@ -90,6 +94,7 @@ lcn:bc-notice
     lcont:templateText """The BC (Biocultural) Notice is a visible notification that there are accompanying cultural rights and responsibilities that need further attention for any future sharing and use of this material or data. The BC Notice recognizes the rights of Indigenous Peoples to permission the use of information, collections, data and digital sequence information (DSI) generated from the biodiversity or genetic resources associated with traditional lands, waters, and territories. The BC Notice may indicate that BC Labels are in development and their implementation is being negotiated.
 
 [Optional BC Notice use statement]"""@en ;
+    dcterms:references bccs: ;
     sdo:citation "https://localcontexts.org/notice/bc-notice/"^^xsd:anyURI ;
     skos:inScheme lcncs: ;
     skos:topConceptOf lcncs: ;
@@ -134,7 +139,7 @@ lcn:attribution-incomplete
     skos:example """Collections and items Welcome Collection have incomplete, inaccurate, and/or missing attribution. We are using this notice to clearly identify this material so that it can be updated, or corrected by communities of origin. Our institution is committed to collaboration and partnerships to address this problem of incorrect or missing attribution.
 
 If you know of (or think there may be) items among the collections here of relevance to your community, we activelty encourage you to get in touch."""@en ;    
-sdo:citation "https://localcontexts.org/notice/attribution-incomplete/"^^xsd:anyURI ;
+    sdo:citation "https://localcontexts.org/notice/attribution-incomplete/"^^xsd:anyURI ;
     skos:inScheme lcncs: ;
     skos:topConceptOf lcncs: ;
 .
