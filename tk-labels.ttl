@@ -67,7 +67,7 @@ tk:attribution
     odrl:attribute 
        [ a cc:Attribution ;
           odrl:attributedParty "custodians or owners"@en ;
-          dcterms:description "attribute the correct sources, custodians, or owners"@en .
+          dcterms:description "attribute the correct sources, custodians, or owners"@en
         ] ;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: .
@@ -88,7 +88,7 @@ tk:clan
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:assignee "clan"@en ; 
-         dcterms:description "material circulating may be shared between clan members and/or according to protocols for clan relationships."@en .
+         dcterms:description "material circulating may be shared between clan members and/or according to protocols for clan relationships."@en
          ] ;
     skos:notation "TK CL" ;
     skos:prefLabel "Clan"@en ;
@@ -109,7 +109,7 @@ tk:commercial
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:action odrl:commercialize ;
-         dcterms:description "commercialization opportunities may be derived from cultural material"@en .
+         dcterms:description "commercialization opportunities may be derived from cultural material"@en
          ] ;
     skos:notation "TK OC" ;
     skos:prefLabel "Open to Commercialization"@en ;
@@ -130,7 +130,7 @@ tk:community-use-only
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:assignee "community"@en ; 
-         dcterms:description "material circulating may be shared between family, clan or community."@en .
+         dcterms:description "material circulating may be shared between family, clan or community."@en
          ] ;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
@@ -153,7 +153,7 @@ tk:community-voice
     odrl:share 
        [ a odrl:Action ;
           odrl:assignee "community members" ;
-          dctersm:description "community members are encouraged to share their knowledge, stories and experiences"@en ;
+          dctersm:description "community members are encouraged to share their knowledge, stories and experiences"@en
         ] ;
     skos:inScheme cs: ;
     skos:notation "TK CV" ;
@@ -223,7 +223,7 @@ If you have questions or wish to do research with a specific family please conta
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:assignee "family"@en ; 
-         dcterms:description "material circulating may be shared between family."@en .
+         dcterms:description "material circulating may be shared between family."@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK F" ;
@@ -244,7 +244,7 @@ tk:men-general
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:assignee "men in the community"@en ; 
-         dcterms:description "material circulating may be shared between men in the community"@en .
+         dcterms:description "material circulating may be shared between men in the community"@en
          ] ;
 skos:inScheme cs: ;
     skos:notation "TK MG" ;
@@ -265,7 +265,7 @@ tk:men-restricted
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:assignee "men in the community"@en ; 
-         dcterms:description "material circulating may be shared between authorized and/or initiated men in the community"@en .
+         dcterms:description "material circulating may be shared between authorized and/or initiated men in the community"@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK MR" ;
@@ -285,7 +285,7 @@ tk:multiple-communities
     odrl:attribute [
         a cc:Attribution ;
         odrl:attributedParty "multiple communities"@en ; 
-        dcterms:description "multiple communities have responsibilities of custodianship and/or ownership over specific material"@en .
+        dcterms:description "multiple communities have responsibilities of custodianship and/or ownership over specific material"@en
          ] ;
 skos:inScheme cs: ;
     skos:notation "TK MC" ;
@@ -307,7 +307,7 @@ tk:non-commercial
       [a odrl:Prohibition ;
          odrl:purpose odrl:prohibit ;
          odrl:action odrl:commercialize ;
-         dcterms:description "commercialization opportunities may not be derived from cultural material"@en .
+         dcterms:description "commercialization opportunities may not be derived from cultural material"@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK NC" ;
@@ -342,7 +342,7 @@ tk:open-to-collaboration
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
-         dcterms:description "materials may be open ot research collaborations"@en .
+         dcterms:description "materials may be open ot research collaborations"@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK CB" ;
@@ -363,7 +363,7 @@ tk:outreach
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
-         dcterms:description "materials may be used for educational outreach activities"@en .
+         dcterms:description "materials may be used for educational outreach activities"@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK O" ;
@@ -383,7 +383,7 @@ tk:seasonal
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:event ;
-         dcterms:description "material has seasonal conditions of access and use"@en ;
+         dcterms:description "material has seasonal conditions of access and use"@en
          ] ;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs:
@@ -404,7 +404,7 @@ tk:secret-sacred
       [a odrl:Duty ;
          odrl:purpose odrl:obtainConsent
          odrl:assignee "external users"@en ;
-         dcterms:description "external users shall discuss potential use of materials"@en ;
+         dcterms:description "external users shall discuss potential use of materials"@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK SS" ;
@@ -441,7 +441,7 @@ tk:women-general
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:assignee "women in the community"@en ; 
-         dcterms:description "material circulating may be shared between women in the community"@en .
+         dcterms:description "material circulating may be shared between women in the community"@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK WG" ;
@@ -462,7 +462,7 @@ tk:women-restricted
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
          odrl:assignee "women in the community"@en ; 
-         dcterms:description "material circulating may be shared between authorized and/or initiated women within the community."@en .
+         dcterms:description "material circulating may be shared between authorized and/or initiated women within the community."@en
          ] ;
     skos:inScheme cs: ;
     skos:notation "TK WR" ;
