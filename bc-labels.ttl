@@ -1,6 +1,7 @@
 PREFIX bc: <https://data.idnau.org/pid/vocab/bc-labels/>
 PREFIX bccs: <https://data.idnau.org/pid/vocab/bc-labels>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX lcn: <https://data.idnau.org/pid/vocab/lc-notices/>
 PREFIX lcont: <https://data.idnau.org/pid/lc-ont/>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -10,7 +11,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tk: <https://data.idnau.org/pid/vocab/tk-labels/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-bscs:
+bccs:
     a skos:ConceptScheme ;
     dcterms:created "2022-06-22"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/idn> ;
@@ -102,7 +103,7 @@ bc:provenance
 bc:multiple-communities
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel ;
     dcterms:identifier "multiple-communities"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-multiple-communities/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
@@ -119,7 +120,7 @@ bc:multiple-communities
 bc:clan
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel ;
     dcterms:identifier "clan"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-clan/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
@@ -136,7 +137,7 @@ bc:clan
 bc:consent-verified
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel ;
     dcterms:identifier "consent-verified"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-consent-verified/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
@@ -153,7 +154,7 @@ bc:consent-verified
 bc:consent-non-verified
     a
         skos:Concept ,
-        odrl:Policy , lcont:BCLabel .
+        odrl:Policy , lcont:BCLabel ;
     dcterms:identifier "consent-non-verified"^^xsd:token ;
     sdo:citation "https://localcontexts.org/label/bc-consent-non-verified/"^^xsd:anyURI ;
     rdfs:isDefinedBy bccs: ;
