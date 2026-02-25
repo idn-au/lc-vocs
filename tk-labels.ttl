@@ -86,6 +86,7 @@ tk:clan
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."@en ; 
     skos:example "This Label is being used to indicate that this material has specific conditions for sharing, and this responsibility sits with hapū members within Te Whakatohea who are the primary kaitiaki/ authority. Who those hapū members are, and how how shareing occurs will be defined in each locale. This Label asks viewers of these materials to respect the Mātauranga-ā-hapū cultural values and expectations about circulation and use defined by designated hapū members, and their internal relations"@en ;
     skos:inScheme cs: ;
+    lcont:relatedNotice lcn:belonging ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -107,6 +108,7 @@ tk:commercial
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to indicate that [community name or authorized party] is open to commercialization opportunities that might derive from any cultural material with traditional knowledge to which this Label is connected to. As a primary party for any partnership and collaboration opportunities that emerge from the use of this cultural material and traditional knowledge, we retain an expressed interest in any future negotiations."@en ; 
     skos:inScheme cs: ;
+    odrl:relatedNotice lcn:open-to-collaborate ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -128,6 +130,7 @@ tk:community-use-only
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for circulation within the community. It is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use."@en ; 
     skos:example "This Label is being used to indicate that this taonga is not, and never was, free, public or available for everyone at anytime. The Label indicates that there are protocols and permissions for use and ahs specific conditions for circulation within Te Whakatohea. This materia should only be used by Te Whakatohea or with express permission of the Te Taurmata Kaumātua"@en ;
+    lcont:relatedNotice lcn:belonging ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -173,6 +176,7 @@ tk:creative
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to acknowledge the relationship between the creative practices of [name] and [community name] and the associated cultural responsibilities."@en ; 
     skos:example "This Label is being used to acknowledge the relationship between the creative practices of the artists or arti, Te Whakatohea and the associated cultural responsibilities. Te Whakatohea ask that as a user you appl the correct attribution in any future use of this work. Acknowledge all information sources to ensure the mana and integrity of the works, the artists and Te Whakatohea is upheld."@en ;
+    lcont:relatedNotice lcn:attribution-incomplete ;
     skos:inScheme cs: ;
     skos:notation "TK CR" ;
     skos:prefLabel "Creative"@en ;
@@ -195,6 +199,7 @@ Tla'amin teachings, laws, and practices that flow from them are subject to the �
 Other parts of the book are labelled “ʔəms naʔ” because the ongoing nature of settler colonialism means that the histories discussed here are not part of a distant past. For close to a century, colonial laws and policies prevented community members from sharing teachings freely in their community without fear of punishment or retribution, imposing silences that remain even today. Thus this label also applies to chapters that discuss the genocidal practices that sought to interrupt the transmission of teachings and to sever Tla'amin sovereign rights to their territory.
 
 Please treat information and photographs marked with this label with special care, especially if you plan to share them with others."""@en ;
+    lcont:relatedNotice lcn:caring ;
 #######
 # WIP
 ######
@@ -221,6 +226,7 @@ tk:family
     skos:example """Family is core tenet within Musqueam teachings. Certain families havevspecific cultural knowledge that is not generally shared with everyone. Families may designate a certain member to be the contact for the access to and circulation of cultural knowledge and material.
 
 If you have questions or wish to do research with a specific family please contact [contact details] and view the research permitting process here [weblink]."""@en ;
+    lcont:relatedNotice lcn:belonging ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -286,6 +292,7 @@ tk:multiple-communities
     skos:definition "This Label should be used to indicate that multiple communities have responsibilities of custodianship and/or ownership over specific material. This Label recognizes that no singular community has explicit control. Rather, rights and responsibilities for use are spread across communities through already existing community protocols and ongoing cultural relationships."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "Responsibility and ownership over this material is spread across several distinct communities. Use will be dependent upon discussion and negotiation with the multiple communities named herein [insert names]. Decisions about use will need to be decided collectively. As an external user of this material you are asked to recognize and respect cultural protocols in relation to the use of this material and clear your intended use with the relevant communities."@en ; 
+    lcont:relatedNotice lcn:attribution-incomplete ;
     odrl:attribute [
         a cc:Attribution ;
         odrl:attributedParty "multiple communities"@en ; 
@@ -307,6 +314,7 @@ tk:non-commercial
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This material has been designated as being available for non-commercial use. You are allowed to use this material for non-commercial purposes including for research, study, or public presentation and/or online in blogs or non-commercial websites. This Label asks you to think and act with fairness and responsibility towards this material and the original custodians."@en ; 
     skos:example "This Label indicates that this material should not be used in any commercial ways, including ways that derive profit from sale or production for non-Passamaquoddy people. The name of this Label Ma yut monuwasiw means ‘this is not to be sold/purchased’. If you are unsure if your use is non-commercial, please contact: [contact details]"@en ;
+    odrl:relatedNotice lcn:open-to-collaborate ;
     odrl:prohibition 
       [a odrl:Prohibition ;
          odrl:purpose odrl:prohibit ;
@@ -328,6 +336,7 @@ tk:non-verified
     skos:definition "This material has not been verified by the community. Reasons for this could include that it has not been appropriately vetted, has mistakes, omissions, derogatory language, lack of informed consent, or its process of creation was through dishonest research which did not follow proper community protocols."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used because there are concerns about accuracy and/or representations made in this material. This material was not created through informed consent or community protocols for research and engagement. Therefore, questions about its accuracy and who/how it represents this community are being raised."@en ; 
+    lcont:relatedNotice lcn:attribution-incomplete ;
     skos:inScheme cs: ;
     skos:notation "TK NV" ;
     skos:prefLabel "Non-Verified"@en ;
@@ -343,6 +352,7 @@ tk:open-to-collaboration
     skos:definition "This Label is being used to indicate that the community is open to research collaborations. With this Label, future opportunities for collaboration and engagement are supported."@en ;
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to make clear [community name or authorizing body] is open to future engagement, collaboration, and partnership around research opportunities."@en ; 
+    odrl:relatedNotice lcn:open-to-collaborate ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -364,6 +374,7 @@ tk:outreach
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material can be used for educational outreach activities. This Label asks you to respect the designated circulation conditions for this material and additionally, where possible, to develop a means for fair and equitable reciprocal exchange for the use of this material with the relevant TK holders. This exchange might include access to educational or other resources that are difficult to access under normal circumstances."@en ; 
     skos:example "Certain material has been identified by Passamaquoddy tribal members and can be used and shared for educational purposes. Ekehkimkewey means 'educational'. The Passamaquoddy Tribe is a present day community that retains cultural authority over its heritage. This Label is being used to teach and share cultural knowledge and histories and to raise greater awareness and respect for Passamaquoddy culture and worldviews. If you want further advice about using any material that has this Label, please contact: [contact details]"@en ;
+    odrl:relatedNotice lcn:open-to-collaborate ;
     odrl:permission 
       [a odrl:Permission ;
          odrl:purpose odrl:grantUse ;
@@ -404,6 +415,7 @@ tk:secret-sacred
     skos:scopeNote "Each Label is meant to be customized by a community. See Template Text."@en ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available because it contains important secret or sacred components. The Label is correcting a misunderstanding about the significance of this material and therefore its circulation conditions. It is letting users know that because of its secret/sacred status it is not, and was never free, public, or available for everyone at anytime. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ; 
     skos:example "In our Stό:lō culture, certain types of knowledge are restricted in some way. They are considered sacred, secret, potent and/or private, and only certain people or families can and should have access to them. We call this xa:xa in our language. This label indicates that there is additional knowledge about a certain subject that cannot be shared on the website."@en ;
+    lcont:relatedNotice lcn:viewing , lcn:withholding , lcn:leave-undisturbed ;
     odrl:duty 
       [a odrl:Duty ;
          odrl:purpose odrl:obtainConsent ;
