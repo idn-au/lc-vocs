@@ -153,7 +153,7 @@ tk:community-voice
     odrl:share 
        [ a odrl:Action ;
           odrl:assignee "community members" ;
-          dctersm:description "community members are encouraged to share their knowledge, stories and experiences"@en
+          dcterms:description "community members are encouraged to share their knowledge, stories and experiences"@en
         ] ;
     skos:inScheme cs: ;
     skos:notation "TK CV" ;
@@ -402,7 +402,7 @@ tk:secret-sacred
     skos:example "In our Stό:lō culture, certain types of knowledge are restricted in some way. They are considered sacred, secret, potent and/or private, and only certain people or families can and should have access to them. We call this xa:xa in our language. This label indicates that there is additional knowledge about a certain subject that cannot be shared on the website."@en ;
     odrl:duty 
       [a odrl:Duty ;
-         odrl:purpose odrl:obtainConsent
+         odrl:purpose odrl:obtainConsent ;
          odrl:assignee "external users"@en ;
          dcterms:description "external users shall discuss potential use of materials"@en
          ] ;
