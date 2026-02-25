@@ -7,6 +7,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tk: <https://data.idnau.org/pid/vocab/tk-labels/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 bscs:
@@ -92,10 +93,11 @@ bc:provenance
 
 [Optional attribution statement]"""@en ;
     skos:example "This Label is being used to affirm an inherent interest Te Roroa people have in the scientific collections and data (including Digital Sequence Information) about communities, peoples, and the biodiversity found within traditional lands, waters and territories. Te Roroa retains the right to be named and associated with it into the future. This association reflects a significant relationship and responsibility to biocultural materials from within the rohe of Te Roroa and associated scientific collections and data."@en ;
+    lcont:relatedNotice lcn:attribution ;
+    skos:relatedMatch tk:attribution ;
     skos:inScheme bccs: ;
     rdfs:isDefinedBy bccs:
 .
-
 
 bc:multiple-communities
     a
@@ -107,6 +109,8 @@ bc:multiple-communities
     skos:definition "This Label should be used to indicate that multiple communities have responsibility, custodianship and/or ownership over the geographic regions where this species or biological entity originates/is found. This Label recognizes that whilst one community might exert specific authority, other communities also have rights and responsibilities for use and care."@en ;
     lcont:templateText "This Label is being used to affirm that responsibility and ownership over this information, collection, data, and digital sequence information (DSI) is spread across several distinct communities. Use will be dependent upon discussion and negotiation with these multiple communities."@en ;  
     skos:example ""@en ; 
+    lcont:relatedNotice lcn:attribution-incomplete ;
+    skos:relatedMatch tk:multiple-communities ;
     skos:inScheme bccs: ;
     skos:notation "BC MC" ;
     skos:prefLabel "Multiple Communities"@en ;
@@ -122,6 +126,8 @@ bc:clan
     skos:definition "This Label should be used when you would like external users to know that this material is subject to conditions for circulation relating to clan membership and/or is according to protocols for clan relationships. Because these conditions have not historically been recognized, this Label helps make these conditions for use and circulation clearer. Specifically, the Label asks future users to respect culturally specific rules of use and to make informed decisions about using this type of material."@en ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this data has specific conditions for use and sharing because of clan membership and/or relationships. This Label asks viewers of this data to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."@en ;    
     skos:example ""@en ; 
+    lcont:relatedNotice lcn:belonging ;
+    skos:relatedMatch tk:clan ;
     skos:inScheme bccs: ;
     skos:notation "BC CL" ;
     skos:prefLabel "Clan"@en ;
@@ -137,6 +143,8 @@ bc:consent-verified
     skos:definition "Indigenous peoples have the right to permission the use of information, biological collections, data, and digital sequence information (DSI) that derives from associated lands, waters and territories. This Label verifies that there are consent conditions in place for uses of information, collections, data, and digital sequence information."@en ;
     lcont:templateText "This Label is being used to verify that [community name or authorizing party] have consent conditions in place for the use of this information, collections, data, and digital sequence information. [These can be found at ….]."@en ;  
     skos:example "This Label is being used to verify that the Kichwa Indigenous People of Sarayaku, their protective beings, nature, and territory have the appropriate conditions of consent regarding the use of this information, collection, data and digital sequence information. Such verification can be found as part of the research process carried out by the Kichwa Indigenous People of Sarayaku, their protectors, nature, and territory for the research related to the mushrooms and their mycorrhizal networks that live in the Sarayaku territory."@en ; 
+    skos:relatedMatch tk:verified ;
+    lcont:relatedNotice lcn:authorization ;
     skos:inScheme bccs: ;
     skos:notation "BC CV" ;
     skos:prefLabel "Consent Verified"@en ;
@@ -152,6 +160,8 @@ bc:consent-non-verified
     skos:definition "The consent associated with this data has not been verified by the community. Reasons for this could include that it has not been appropriately vetted, has mistakes, omissions, lack of informed consent, or its process of creation was through research which did not follow proper community protocols."@en ;
     lcont:templateText "This Label is being used because there are concerns about the accuracy of the consent and/or representations made for this data. This material was not created through informed consent or community protocols for research and engagement."@en ; 
     skos:example ""@en ; 
+    skos:relatedMatch tk:non-verified ;
+    lcont:relatedNotice lcn:authorization ;
     skos:inScheme bccs: ;
     skos:notation "BC CNV" ;
     skos:prefLabel "Consent Non-Verified"@en ;
@@ -169,6 +179,8 @@ bc:research-use
 
 [Optional return of research results statement]"""@en ;    
     skos:example "This Label is being used by the Kichwa Indigenous People of Sarayaku, their protective beings, nature, and territory to recognize that they allow the use of this information, data and digital sequence information for non-specific research purposes. However any specific use should be accepted, recognized, and validated by the Governing Council of the Kichwa Indigenous People of Sarayaku. This Label does not provide permission for commercial activities. Anyone interested in accessing this information should contact the Governing Council of the Kichwa Indigenous People of Sarayaku and obtain the consent of the Sarayaku People."@en ; 
+    odrl:relatedNotice lcn:open-to-collaborate ;
+    skos:relatedMatch tk:open-to-collaboration ;
     skos:inScheme bccs: ;
     skos:notation "BC R" ;
     skos:prefLabel "Research Use"@en ;
@@ -184,6 +196,8 @@ bc:open-to-collaboration
     skos:definition "This Label is being used to indicate that the community is open to research collaborations and outreach activities. With this Label, future opportunities for collaboration and engagement are supported."@en ;
     lcont:templateText "This Label is being used to make clear [community name or authorizing body] is open to future engagement, collaboration, and partnership around research and outreach opportunities."@en ;
     skos:example "The Kichwa Indigenous People of Sarayaku, their protectors, nature, and territory are willing to collaborate with external actors in projects or activities related to this information. However, any type of collaboration and use of this information must be done with the consent of the Governing Council of the Kichwa Indigenous People of Sarayaku, their protectors, nature, and territory."@en ; 
+    odrl:relatedNotice lcn:open-to-collaborate ;
+    skos:relatedMatch tk:k:open-to-collaboration ;
     skos:inScheme bccs: ;
     skos:notation "BC CB" ;
     skos:prefLabel "Open To Collaboration"@en ;
@@ -199,6 +213,8 @@ bc:open-to-commercialization
     skos:definition "Indigenous peoples have the right to benefit from information, biological collections, data, and digital sequence information (DSI) that derives from traditional lands, waters and territories. This Label is being used to indicate an express interest in being a primary party to any future negotiations if future commercialization opportunities arise."@en ;
     lcont:templateText "This Label is being used to indicate that [community name or authorizing party] is open to commercialization opportunities that might derive from any information, collections, data, and digital sequence information (DSI) to which this Label is connected. As a primary party in any partnership and collaboration opportunity that emerges from the use of these resources, we retain an express interest in any future negotiations."@en ;
     skos:example "This Label is being used to indicate that Whakatohea is open to commercialisation opportunities that might derive from any information, biocultural materials and data including DSI to which this Label is connected. Whakatohea assert our right to participate in discussions and commercialisation of this taonga."@en ; 
+    odrl:relatedNotice lcn:open-to-collaborate ;
+    skos:relatedMatch tk:commercial ;
     skos:inScheme bccs: ;
     skos:notation "BC OC" ;
     skos:prefLabel "Open To Commercialization"@en ;
@@ -214,6 +230,8 @@ bc:outreach
     skos:definition "This Label should be used when you would only like your biocultural materials and/or data used for educational outreach activities. Outreach activities means to share works outside the community in order to increase and raise awareness and education about your family, clan and/or community. Sites for outreach activities can include schools, universities, libraries, archives, museums, online forums, and small learning groups."@en ;
     lcont:templateText "The Label is letting any users know that this data can be used for educational outreach activities. This Label asks you to respect the designated circulation conditions for these biocultural materials and/or data and additionally, where possible, to develop a means for fair and equitable reciprocal exchange for the use of this data with the relevant BC holders."@en ; 
     skos:example ""@en ; 
+    odrl:relatedNotice lcn:open-to-collaborate ;
+    skos:relatedMatch tk:outreach ;
     skos:inScheme bccs: ;
     skos:notation "BC O" ;
     skos:prefLabel "Outreach"@en ;
@@ -229,6 +247,8 @@ bc:non-commercial
     skos:definition "This Label should be used when you would like to let external users who have access to your biocultural data know that it should only be used in non-commercial ways. You are asking users to be respectful with your data and ask that it not be used to derive economic benefits or used in any way that makes it into a commodity for sale or purchase."@en ;
     lcont:templateText "This Label is being used to indicate that these biocultural materials and/or data have been designated as being available for non-commercial use. You are allowed to use this material for non-commercial purposes including for research, study, or public presentation and/or online in blogs or non-commercial websites. This Label asks you to think and act with respect and responsibility towards this data and the original custodians."@en ; 
     skos:example ""@en ; 
+    odrl:relatedNotice lcn:open-to-collaborate ;
+    skos:relatedMatch tk:non-commercial ;
     skos:inScheme bccs: ;
     skos:notation "BC NC" ;
     skos:prefLabel "Non-Commercial"@en ;
