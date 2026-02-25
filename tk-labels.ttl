@@ -1,4 +1,4 @@
-PREFIX cs: <https://data.idnau.org/pid/vocab/tk-labels/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/tk-labels>
 PREFIX cc: <http://creativecommons.org/ns#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX lc: <https://data.idnau.org/pid/vocab/lc-ontology#>
