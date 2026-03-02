@@ -1,7 +1,6 @@
 PREFIX bc:      <https://data.idnau.org/pid/vocab/bc-labels/>
 PREFIX bccs:    <https://data.idnau.org/pid/vocab/bc-labels>
 PREFIX cc:      <http://creativecommons.org/ns#>
-PREFIX cs:      <https://data.idnau.org/pid/vocab/tk-labels>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX idn:     <https://linked.data.gov.au/org/idn>
 PREFIX kai:     <https://kurrawong.ai>
