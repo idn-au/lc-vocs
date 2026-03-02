@@ -13,8 +13,6 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX tk: <https://data.idnau.org/pid/vocab/tk-labels/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 lcncs:
     a skos:ConceptScheme ;
     skos:prefLabel "Local Contexts Notices"@en ;
