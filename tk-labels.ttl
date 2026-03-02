@@ -61,7 +61,7 @@ tk:verified  rdf:type       lcont:TKLabel , skos:Concept , odrl:Policy;
         dcterms:identifier  "verified"^^xsd:token;
         skos:definition     "This Label should be used when you and your community are satisfied with the way in which your traditional knowledge materials are being represented online or offline. This Label affirms that appropriate conditions for access and use are in place and that whoever has made this material accessible has made accommodations for cultural protocols associated with the knowledge. It lets users know that the right thing is being done by your community protocols and standards."@en;
         skos:example        "The knowledge presented on this website was created through a community decision-making process directed by our Elders. The verified label acknowledges that this knowledge was produced through ‘correct work’ in our language, iyólem syó:ys, and has been approved by our community as a whole."@en;
-        skos:inScheme       cs:;
+        skos:inScheme       tkcs:;
         skos:notation       "TK V";
         skos:prefLabel      "Verified"@en;
         skos:relatedMatch   bc:consent-verified;
@@ -97,7 +97,7 @@ tk:secret-sacred  rdf:type   lcont:TKLabel , skos:Concept , odrl:Request;
         sdo:citation         "https://localcontexts.org/label/tk-secret-sacred/"^^xsd:anyURI .
 
 tk:seasonal  rdf:type       odrl:Policy , skos:Concept , lcont:TKLabel;
-        rdfs:isDefinedBy    cs:;
+        rdfs:isDefinedBy    tkcs:;
         dcterms:identifier  "seasonal"^^xsd:token;
         skos:definition     "This Label should be used when you want to let external users know that the material that is openly circulating has seasonal conditions of access and use. This could mean that some material should only be used and heard at particular times of the year. It could also mean that the environment and land where this material derives also influences and impacts its meaning and significance. This Label can be used to help external users know that there are land-based teachings in this material which affect proper use and respectful understanding."@en;
         skos:example        "This Label indicates that according to the traditional knowledge of the Kichwa Indigenous People of Sarayaku, their protective beings, nature and territory, part of the material related to mushrooms is only visible during the rainy seasons."@en;
@@ -314,7 +314,7 @@ tk:creative  rdf:type        lcont:TKLabel , skos:Concept , odrl:Policy;
         sdo:citation         "https://localcontexts.org/label/tk-creative/"^^xsd:anyURI .
 
 tk:community-voice  rdf:type  odrl:Policy , skos:Concept , lcont:TKLabel;
-        rdfs:isDefinedBy    cs:;
+        rdfs:isDefinedBy    tkcs:;
         dcterms:identifier  "community-voice"^^xsd:token;
         skos:definition     "This Label should be used when you would like to encourage community members to share their knowledge, stories and experiences. This Label would usually be used within a community-based archive to encourage the sharing of stories. This Label indicates that the current narrative or explanation that accompanies this material is incomplete or partial and that many community voices are needed to help make sense of and understand the event, photograph, recording or heritage item. The Community Voice Label encourages multiplicity in the telling, listening and sharing of community histories and cultural knowledge."@en;
         skos:example        "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any Te Whakatohea iwi member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us Indigenise Te Whakatohea histories and knowledge. This sharing is an internal process. "@en;
@@ -497,7 +497,7 @@ tk:attribution  rdf:type     lcont:TKLabel , skos:Concept , odrl:Policy;
   odrl:attributedParty  "custodians or owners"@en
 ] .
 
-cs:     rdf:type            skos:ConceptScheme;
+tkcs:     rdf:type            skos:ConceptScheme;
         dcterms:created     "2022-06-22"^^xsd:date;
         dcterms:creator     idn:;
         dcterms:identifier  "tk"^^xsd:token;
