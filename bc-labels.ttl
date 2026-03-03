@@ -30,7 +30,7 @@ bc:non-commercial  rdf:type  lcont:BCLabel , skos:Concept , odrl:Policy;
         skos:relatedMatch    tk:non-commercial;
         skos:topConceptOf    bccs:;
         odrl:prohibition     [ rdf:type             odrl:Prohibition;
-                               dcterms:description  "commercialization opportunities may not be derived from biocultural material/data"@en;
+                               dcterms:description  "Indicates that commercialization opportunities may not be derived from biocultural material/data."@en;
                                odrl:action          odrl:commercialize
                              ];
         lcont:relatedNotice  lcn:open-to-collaborate;
@@ -48,6 +48,7 @@ bc:outreach  rdf:type        lcont:BCLabel , skos:Concept , odrl:Policy;
         skos:relatedMatch    tk:outreach;
         skos:topConceptOf    bccs:;
         odrl:permission      [ rdf:type     odrl:Permission;
+                               dcterms:description  "Indicates that biocultural materials and/or data may be used for educational outreach activities."@en;
                                odrl:action  odrl:use
                              ];
         lcont:relatedNotice  lcn:open-to-collaborate;
@@ -66,6 +67,7 @@ bc:open-to-commercialization
         skos:relatedMatch    tk:commercial;
         skos:topConceptOf    bccs:;
         odrl:permission      [ rdf:type     odrl:Permission;
+                               dcterms:description  "Indicates interest in being a primary party to any future negotiations if future commercialization opportunities arise."@en;
                                odrl:action  odrl:use
                              ];
         lcont:relatedNotice  lcn:open-to-collaborate;
@@ -84,6 +86,7 @@ bc:open-to-collaboration
         skos:relatedMatch    tk:open-to-collaboration;
         skos:topConceptOf    bccs:;
         odrl:permission      [ rdf:type     odrl:Permission;
+                               dcterms:description  "Indicates that the community is open to research collaborations and outreach activities."@en;
                                odrl:action  odrl:use
                              ];
         lcont:relatedNotice  lcn:open-to-collaborate;
@@ -101,6 +104,7 @@ bc:research-use  rdf:type    lcont:BCLabel , skos:Concept , odrl:Policy;
         skos:relatedMatch    tk:open-to-collaboration;
         skos:topConceptOf    bccs:;
         odrl:permission      [ rdf:type     odrl:Permission;
+                               dcterms:description  "Indicates permission use of information, collections, data, and digital sequence information (DSI) for unspecified research."@en;
                                odrl:action  odrl:use
                              ];
         lcont:relatedNotice  lcn:open-to-collaborate;
@@ -121,7 +125,7 @@ bc:consent-non-verified
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "See template text."@en;
+                                              dcterms:description  "Indicate that consent associated with data has not been verified by the community."@en;
                                               odrl:action          lcont:followProtocol
                                             ]
                              ];
@@ -142,7 +146,7 @@ bc:consent-verified  rdf:type  lcont:BCLabel , skos:Concept , odrl:Policy;
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "See template text."@en;
+                                              dcterms:description  "Indicates the right to permit the use of information, biological collections, data, and digital sequence information (DSI) that derives from associated lands, waters and territories."@en;
                                               odrl:action          lcont:followProtocol
                                             ]
                              ];
@@ -163,7 +167,7 @@ bc:clan  rdf:type            lcont:BCLabel , skos:Concept , odrl:Policy;
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "See template text."@en;
+                                              dcterms:description  "Indicates that material is subject to conditions for circulation relating to clan membership and/or is according to protocols for clan relationships."@en;
                                               odrl:action          lcont:followProtocol
                                             ]
                              ];
@@ -185,7 +189,7 @@ bc:multiple-communities
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "See template text."@en;
+                                              dcterms:description  "Indicates that multiple communities have responsibility, custodianship and/or ownership over the geographic regions where species or biological entity originates/is found."@en;
                                               odrl:action          lcont:followProtocol
                                             ]
                              ];
@@ -206,53 +210,13 @@ bc:provenance  rdf:type      lcont:BCLabel , skos:Concept , odrl:Policy;
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "See template text."@en;
+                                              dcterms:description  "Indicates that Indigenous peoples have the right to make decisions about the future use of information, biological collections, data, and digital sequence information (DSI) that derives from associated lands, waters and territories."@en;
                                               odrl:action          lcont:followProtocol
                                             ]
                              ];
         lcont:relatedNotice  lcn:attribution;
         lcont:templateText   "This Label is being used to affirm an inherent interest Indigenous people have in the scientific collections and data about communities, peoples, and the biodiversity found within traditional lands, waters and territories. [Community name or authorizing party] retains the right to be named and associated with it into the future. This association reflects a significant relationship and responsibility to [the species or biological entity] and associated scientific collections and data.\n\n[Optional attribution statement]"@en;
         sdo:citation         "https://localcontexts.org/label/bc-provenance/"^^xsd:anyURI .
-
-[ rdf:type     odrl:Permission;
-  odrl:action  odrl:use;
-  odrl:duty    [ rdf:type             odrl:Duty;
-                 dcterms:description  "See template text."@en;
-                 odrl:action          lcont:followProtocol
-               ]
-] .
-
-[ rdf:type     odrl:Permission;
-  odrl:action  odrl:use;
-  odrl:duty    [ rdf:type             odrl:Duty;
-                 dcterms:description  "See template text."@en;
-                 odrl:action          lcont:followProtocol
-               ]
-] .
-
-[ rdf:type     odrl:Permission;
-  odrl:action  odrl:use;
-  odrl:duty    [ rdf:type             odrl:Duty;
-                 dcterms:description  "See template text."@en;
-                 odrl:action          lcont:followProtocol
-               ]
-] .
-
-[ rdf:type     odrl:Permission;
-  odrl:action  odrl:use;
-  odrl:duty    [ rdf:type             odrl:Duty;
-                 dcterms:description  "See template text."@en;
-                 odrl:action          lcont:followProtocol
-               ]
-] .
-
-[ rdf:type     odrl:Permission;
-  odrl:action  odrl:use;
-  odrl:duty    [ rdf:type             odrl:Duty;
-                 dcterms:description  "Source note (was odrl:share predicate): _:4f02ac1529d0c747530d50a4b57a7eab";
-                 odrl:action          odrl:share
-               ]
-] .
 
 [ rdf:type     odrl:Permission;
   odrl:action  odrl:use;
