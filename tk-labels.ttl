@@ -30,7 +30,7 @@ tk:women-restricted  rdf:type  odrl:Policy , skos:Concept , lcont:TKLabel;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "material circulating may be shared between authorized and/or initiated women within the community."@en;
+                               dcterms:description  "Indicates that material circulating may be shared between authorized and/or initiated women within the community."@en;
                                odrl:assignee        "women in the community"@en;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -48,7 +48,7 @@ tk:women-general  rdf:type   odrl:Policy , skos:Concept , lcont:TKLabel;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "material circulating may be shared between women in the community"@en;
+                               dcterms:description  "Indicates that material circulating may be shared between women in the community."@en;
                                odrl:assignee        "women in the community"@en;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -70,7 +70,7 @@ tk:verified  rdf:type       lcont:TKLabel , skos:Concept , odrl:Policy;
         odrl:permission     [ rdf:type     odrl:Permission;
                               odrl:action  odrl:use;
                               odrl:duty    [ rdf:type             odrl:Duty;
-                                             dcterms:description  "See template text."@en;
+                                             dcterms:description  "Indicates satisfaction with the way traditional knowledge materials are being represented."@en;
                                              odrl:action          lcont:followProtocol
                                            ]
                             ];
@@ -88,7 +88,7 @@ tk:secret-sacred  rdf:type   lcont:TKLabel , skos:Concept , odrl:Request;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:duty            [ rdf:type             odrl:Duty;
-                               dcterms:description  "external users shall discuss potential use of materials"@en;
+                               dcterms:description  "Indicates that external users shall discuss potential use of materials."@en;
                                odrl:assignee        "external users"@en;
                                odrl:purpose         odrl:obtainConsent
                              ];
@@ -107,7 +107,7 @@ tk:seasonal  rdf:type       odrl:Policy , skos:Concept , lcont:TKLabel;
         skos:scopeNote      "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf   cs:;
         odrl:permission     [ rdf:type             odrl:Permission;
-                              dcterms:description  "material has seasonal conditions of access and use"@en;
+                              dcterms:description  "Indicates that material has seasonal conditions of access and use."@en;
                               odrl:purpose         odrl:event
                             ];
         lcont:templateText  "This Label is being used to indicate that this material traditionally and usually is heard and/or utilized at a particular time of year and in response to specific seasonal changes and conditions. For instance, many important ceremonies are held at very specific times of the year. This Label is being used to indicate sophisticated relationships between land and knowledge creation. It is also being used to highlight the relationships between recorded material and the specific contexts where it derives, especially the interconnected and embodied teachings that it conveys."@en;
@@ -125,7 +125,7 @@ tk:outreach  rdf:type        lcont:TKLabel , skos:Concept , odrl:Policy;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "materials may be used for educational outreach activities"@en;
+                               dcterms:description  "Indicates that materials may be used for educational outreach activities."@en;
                                odrl:purpose         odrl:grantUse
                              ];
         lcont:relatedNotice  lcn:open-to-collaborate;
@@ -144,7 +144,7 @@ tk:open-to-collaboration
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "materials may be open ot research collaborations"@en;
+                               dcterms:description  "Indicates that materials may be open to research collaborations."@en;
                                odrl:purpose         odrl:grantUse
                              ];
         lcont:relatedNotice  lcn:open-to-collaborate;
@@ -164,7 +164,7 @@ tk:non-verified  rdf:type    lcont:TKLabel , skos:Concept , odrl:Policy;
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "See template text."@en;
+                                              dcterms:description  "Indicates that material has not been verified by the community."@en;
                                               odrl:action          lcont:followProtocol
                                             ]
                              ];
@@ -184,7 +184,7 @@ tk:non-commercial  rdf:type  lcont:TKLabel , skos:Concept , odrl:Policy;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:prohibition     [ rdf:type             odrl:Prohibition;
-                               dcterms:description  "commercialization opportunities may not be derived from cultural material"@en;
+                               dcterms:description  "Indicates that commercialization opportunities may not be derived from cultural material"@en;
                                odrl:action          odrl:commercialize;
                                odrl:purpose         odrl:prohibit
                              ];
@@ -206,8 +206,9 @@ tk:multiple-communities
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "Source note (was odrl:attribute predicate): _:46402564904df8792d8f7bb01bc0d2dc";
-                                              odrl:action          odrl:attribute
+                                              dcterms:description  "Indicates that multiple communities have responsibilities of custodianship and/or ownership over specific material.";
+                                              odrl:action          odrl:attribute;
+                                              odrl:attributedParty  "multiple communities"@en
                                             ]
                              ];
         lcont:relatedNotice  lcn:attribution-incomplete;
@@ -224,7 +225,7 @@ tk:men-restricted  rdf:type  odrl:Policy , skos:Concept , lcont:TKLabel;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "material circulating may be shared between authorized and/or initiated men in the community"@en;
+                               dcterms:description  "Indicates that material circulating may be shared between authorized and/or initiated men in the community"@en;
                                odrl:assignee        "men in the community"@en;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -242,7 +243,7 @@ tk:men-general  rdf:type     odrl:Policy , skos:Concept , lcont:TKLabel;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "material circulating may be shared between men in the community"@en;
+                               dcterms:description  "Indicates that material circulating may be shared between men in the community."@en;
                                odrl:assignee        "men in the community"@en;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -262,7 +263,7 @@ tk:family  rdf:type          lcont:TKLabel , skos:Concept , odrl:Policy;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "material circulating may be shared between family."@en;
+                               dcterms:description  "Indicates that material circulating may be shared between family."@en;
                                odrl:assignee        "family"@en;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -284,7 +285,7 @@ tk:culturally-sensitive
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "See template text."@en;
+                                              dcterms:description  "Indicates that material has special sensitivities."@en;
                                               odrl:action          lcont:followProtocol
                                             ]
                              ];
@@ -326,8 +327,9 @@ tk:community-voice  rdf:type  odrl:Policy , skos:Concept , lcont:TKLabel;
         odrl:permission     [ rdf:type     odrl:Permission;
                               odrl:action  odrl:use;
                               odrl:duty    [ rdf:type             odrl:Duty;
-                                             dcterms:description  "Source note (was odrl:share predicate): _:4f02ac1529d0c747530d50a4b57a7eab";
-                                             odrl:action          odrl:share
+                                             dcterms:description  "Indicates that community members are encouraged to share their knowledge, stories and experiences.";
+                                             odrl:action          odrl:share;
+                                             odrl:assignee        "community members"
                                            ]
                             ];
         lcont:templateText  "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any community member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us reclaim our histories and knowledge. This sharing is an internal process."@en;
@@ -346,7 +348,7 @@ tk:community-use-only
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "material circulating may be shared between family, clan or community."@en;
+                               dcterms:description  "Indicates that material circulating may be shared between family, clan or community."@en;
                                odrl:assignee        "community"@en;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -365,7 +367,7 @@ tk:commercial  rdf:type      lcont:TKLabel , skos:Concept , odrl:Policy;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "commercialization opportunities may be derived from cultural material"@en;
+                               dcterms:description  "Indicates that commercialization opportunities may be derived from cultural material."@en;
                                odrl:action          odrl:commercialize;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -386,7 +388,7 @@ tk:clan  rdf:type            lcont:TKLabel , skos:Concept , odrl:Policy;
         skos:scopeNote       "Each Label is meant to be customized by a community. See Template Text."@en;
         skos:topConceptOf    tkcs:;
         odrl:permission      [ rdf:type             odrl:Permission;
-                               dcterms:description  "material circulating may be shared between clan members and/or according to protocols for clan relationships."@en;
+                               dcterms:description  "Indicates that material circulating may be shared between clan members and/or according to protocols for clan relationships."@en;
                                odrl:assignee        "clan"@en;
                                odrl:purpose         odrl:grantUse
                              ];
@@ -408,8 +410,9 @@ tk:attribution  rdf:type     lcont:TKLabel , skos:Concept , odrl:Policy;
         odrl:permission      [ rdf:type     odrl:Permission;
                                odrl:action  odrl:use;
                                odrl:duty    [ rdf:type             odrl:Duty;
-                                              dcterms:description  "Source note (was odrl:attribute predicate): _:7c0939b060750c25ac6ffa6c0e084800";
-                                              odrl:action          odrl:attribute
+                                              dcterms:description  "Indicates that attribution of the correct sources, custodians, or owners should be known.";
+                                              odrl:action          odrl:attribute;
+                                              odrl:attributedParty  "custodians or owners"@en
                                             ]
                              ];
         lcont:relatedNotice  lcn:attribution-incomplete;
@@ -480,21 +483,6 @@ tk:attribution  rdf:type     lcont:TKLabel , skos:Concept , odrl:Policy;
 [ rdf:type            odrl:Duty;
   odrl:action         odrl:inform;
   odrl:informedParty  odrl:public
-] .
-
-[ rdf:type              cc:Attribution;
-  dcterms:description   "multiple communities have responsibilities of custodianship and/or ownership over specific material"@en;
-  odrl:attributedParty  "multiple communities"@en
-] .
-
-[ rdf:type             odrl:Action;
-  dcterms:description  "community members are encouraged to share their knowledge, stories and experiences"@en;
-  odrl:assignee        "community members"
-] .
-
-[ rdf:type              cc:Attribution;
-  dcterms:description   "attribute the correct sources, custodians, or owners"@en;
-  odrl:attributedParty  "custodians or owners"@en
 ] .
 
 tkcs:     rdf:type            skos:ConceptScheme;
