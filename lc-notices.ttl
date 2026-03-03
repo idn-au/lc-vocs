@@ -218,3 +218,4 @@ lcncs: a skos:ConceptScheme ;
     sdo:citation "https://localcontexts.org/notices/about-the-notices/"^^xsd:anyURI ;
     sdo:dateCreated "2026-02-11"^^xsd:date ;
     sdo:dateModified "2026-02-11"^^xsd:date .
+
