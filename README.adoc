@@ -1,4 +1,4 @@
-= Local Context Labels Vocabularies
+= Local Context Labels Vocabularies and Ontology
 
 This repository contains https://localcontexts.org[Local Context] labels as Semantic Web vocabularies, as used by the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)].
 
