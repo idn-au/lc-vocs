@@ -2,20 +2,27 @@
 
 This repository contains https://localcontexts.org[Local Context] labels as Semantic Web vocabularies, as used by the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)].
 
-The IDN applies Local Context labels to datasets related to indigenous people to improve dataset metadata and, ultimately, improved indigenous data governance.
+The IDN applies Local Context labels and to datasets related to indigenous people to improve dataset metadata and, ultimately, improved indigenous data governance.
 
 The two labels vocabularies, Traditional Knowledge (TK) and Biocultural (BC) Labels are online with persistent web identifiers at:
 
-* **https://linked.data.gov.au/def/tk-labels**
-* **https://linked.data.gov.au/def/bc-labels**
+* **https://data.idnau.org/pid/vocab/tk-labels**
+* **https://data.idnau.org/pid/vocab/bc-labels**
 
+The labels are linked, where relevant, to Local Context Notices, which are online with persistent web identifiers at:
 
+* **https://data.idnau.org/pid/vocab/lc-notices**
+
+The Labels, Notice and other supporting classes and properties are define in the Local Context Labels Extension Vocabulary:
+
+* **https://data.idnau.org/pid/lc-ont#**
 
 == License & Rights
 
-The contents of this repository is licensed under Creative Commons 4.0 International. See the LICENSE file in the repository for details. Note that the underlying content of the Local Context labels has the following copyright statement at https://localhotexts.org:
+The contents of this repository is licensed under Creative Commons 4.0 International. See the LICENSE file in the repository for details. Note that the underlying content of the Local Context labels has the following copyright statement at https://localcontexts.org:
 
-_Traditional Knowledge (TK) and Biocultural (BC) Labels, Notices and Template Text © 2015 - 2022 Local Contexts. All Rights Reserved._
+_All Labels and Notices Icons and Template Texts © 2010 - 2026 Local Contexts. All Rights Reserved._
+
 
 
 == Contacts
@@ -30,8 +37,7 @@ jamie.feiss@unimelb.edu.au
 
 For policy:
 
-**Levi Murray** +
-*Strategic Data Manager* +
-Indigenous Data Network +
-University of Melbourne +
-levi.murray@unimelb.edu.au
+**Les Kneebone** +
+*Vocabulary Specialist* +
+KurrawongAI
+les@kurrawong.ai
