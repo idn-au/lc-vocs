@@ -16,7 +16,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 lcont:followProtocol a odrl:Action ;
     rdfs:isDefinedBy lcont: ;
     skos:prefLabel "Follow protocol"@en ;
-    sdo:description "Action indicating that a protocol must be followed" ;
+    skos:definition "A label to be applied to data that indicates that a protocol must be followed" ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Follow Protocol" .
 
@@ -25,7 +25,7 @@ lcont:relatedNotice a owl:Property ;
         lcont:TKLabel ;
     rdfs:isDefinedBy lcont: ;
     rdfs:range lcont:LCNotice ;
-    sdo:description "Property indicating that a Local Contexts Label is related in some way ot a Local Contexts Notice" ;
+    skos:definition "A label to be applied to data that indicates that a Traditional Knowledge Label or Biocultural Label is related in some way to a Local Contexts Notice" ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Related Notice" .
 
@@ -35,18 +35,20 @@ lcont:templateText a owl:DatatypeProperty ;
         lcont:TKLabel ;
     rdfs:isDefinedBy lcont: ;
     rdfs:range rdf:langString ;
-    sdo:description "A prescriptive text string associated with a Label or Notice that provides boilerplate wording intended to be reused or customised by end-users. Distinct from skos:example, which is illustrative only." ;
+    skos:definition "A prescriptive text string associated with a Label or Notice that provides boilerplate wording intended to be reused or customised by end-users. Distinct from skos:example, which is illustrative only." ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Template Text" .
 
 lcont:BCLabel a owl:Class ;
     rdfs:isDefinedBy ont: ;
+    skos:definition "A label to be applied to data that define community expectations about appropriate use of biocultural collections and data. The BC Labels focus on accurate provenance, transparency and integrity in research engagements with Indigenous communities. The BC Labels ensure Indigenous people are represented in the metadata and create opportunities for future researchers to connect and support appropriate benefit sharing." ;
     sdo:description "A SKOS Concept representing a Biocultural Label from the Local Contexts framework." ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Biocultural Label" .
 
 lcont:LCNotice a owl:Class ;
     rdfs:isDefinedBy ont: ;
+    skos:definition 
     sdo:description "The class of all Notice concepts from the Local Contexts framework."@en ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Local Contexts Notice"@en .
