@@ -13,11 +13,16 @@ The labels are linked, where relevant, to Local Context Notices, which are onlin
 
 * **https://data.idnau.org/pid/vocab/lc-notices**
 
+The Labels, Notice and other supporting classes and properties are define in the Local Context Labels Extension Vocabulary:
+
+* **https://data.idnau.org/pid/lc-ont#**
+
 == License & Rights
 
 The contents of this repository is licensed under Creative Commons 4.0 International. See the LICENSE file in the repository for details. Note that the underlying content of the Local Context labels has the following copyright statement at https://localcontexts.org:
 
 _All Labels and Notices Icons and Template Texts © 2010 - 2026 Local Contexts. All Rights Reserved._
+
 
 
 == Contacts
