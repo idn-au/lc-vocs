@@ -40,33 +40,39 @@ lcont:templateText a owl:DatatypeProperty ;
     sdo:name "Template Text" .
 
 lcont:BCLabel a owl:Class ;
-    rdfs:isDefinedBy ont: ;
+    rdfs:isDefinedBy lcont: ;
     skos:definition "A label to be applied to data that define community expectations about appropriate use of biocultural collections and data. The BC Labels focus on accurate provenance, transparency and integrity in research engagements with Indigenous communities. The BC Labels ensure Indigenous people are represented in the metadata and create opportunities for future researchers to connect and support appropriate benefit sharing." ;
     sdo:description "A SKOS Concept representing a Biocultural Label from the Local Contexts framework." ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Biocultural Label" .
 
 lcont:LCNotice a owl:Class ;
-    rdfs:isDefinedBy ont: ;
-    skos:definition 
-    sdo:description "The class of all Notice concepts from the Local Contexts framework."@en ;
+    rdfs:isDefinedBy lcont: ;
+    skos:definition "The class of all Notice concepts from the Local Contexts framework."@en ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Local Contexts Notice"@en .
 
 lcont:TKLabel a owl:Class ;
-    rdfs:isDefinedBy ont: ;
+    rdfs:isDefinedBy lcont: ;
     sdo:description "A SKOS Concept representing a Traditional Knowledge Label from the Local Contexts framework." ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Traditional Knowledge Label" .
 
-ont: a owl:Ontology ;
+lcont:QualifiedLocalContext a owl:Class ;
+    rdfs:isDefinedBy lcont: ;
+    skos:definition "An association between an RDF Resource and a Traditional Knowledge Label or Biocultural Label that allows for the nature of the relationship to be defined" ;
+    skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
+    sdo:name "Qualified Local Context" ;
+    rdfs:range lcont:BCLabel , lcont:TKLabel .
+
+lcont: a owl:Ontology ;
     rdfs:seeAlso bccs:,
         lcncs:,
         tkcs: ;
     owl:versionIRI lcont:0.2 ;
-    skos:historyNote """2026-02 NJC: made OntPub-conformant
-
-2025-09 LK: created""" ;
+    skos:historyNote """2026-02 NJC: made OntPub-conformant; 
+2025-09 LK: created; 
+2026-03 LK: harmonised draft and new work""" ;
     sdo:codeRepository "https://github.com/idn-au/refdata-catalogue"^^xsd:anyURI ;
     sdo:copyrightHolder kai: ;
     sdo:copyrightNotice "KurrawongAI, 2026" ;
@@ -74,9 +80,9 @@ ont: a owl:Ontology ;
     sdo:creator kai: ;
     sdo:dateCreated "2025-09-23"^^xsd:date ;
     sdo:dateIssued "2026-03-31"^^xsd:date ;
-    sdo:dateModified "2026-03-30"^^xsd:date ;
-    sdo:description "Defines TKLabel and BCLabel classes as subclasses of skos:Concept, and lc:templateText for associating reusable boilerplate text with Local Contexts labels." ;
+    sdo:dateModified "2026-03-31"^^xsd:date ;
+    sdo:description "Defines lcont:TKLabel and lcont:BCLabel classes as subclasses of skos:Concept, and lcont:templateText for associating reusable boilerplate text with Local Contexts labels." ;
     sdo:license "http://purl.org/NET/rdflicense/cc-by4.0"^^xsd:anyURI ;
     sdo:name "Local Contexts Label Extension Vocabulary" ;
     sdo:publisher idn: ;
-    sdo:version "0.2" .
+    sdo:version "0.3" .
