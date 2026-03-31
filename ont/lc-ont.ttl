@@ -25,7 +25,7 @@ lcont:relatedNotice a owl:Property ;
         lcont:TKLabel ;
     rdfs:isDefinedBy lcont: ;
     rdfs:range lcont:LCNotice ;
-    skos:definition "A label to be applied to data that indicates that a Traditional Knowledge Label or Biocultural Label is related in some way to a Local Contexts Notice" ;
+    skos:definition "A relationship that indicates that a Traditional Knowledge Label or Biocultural Label is related in some way to a Local Contexts Notice" ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Related Notice" .
 
