@@ -16,7 +16,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 lcont:followProtocol a odrl:Action ;
     rdfs:isDefinedBy lcont: ;
     skos:prefLabel "Follow protocol"@en ;
-    skos:definition "A label to be applied to data that indicates that a protocol must be followed" ;
+    skos:definition "Indicates that a protocol in a Local Context Notice must be followed" ;
+    rdfs:domain lcont:LCNotice ;
+    rdfs:range rdf:langString ;
     skos:historyNote "Defined here for the first time in the Local Contexts Label Extension Vocabulary" ; 
     sdo:name "Follow Protocol" .
 
