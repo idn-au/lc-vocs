@@ -12,6 +12,11 @@ PREFIX tk: <https://data.idnau.org/pid/vocab/tk-labels/>
 PREFIX tkcs: <https://data.idnau.org/pid/vocab/tk-labels>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+idn: a schema:Organization ;
+schema:name "Indigenous Data Network" ;
+schema:url "https://idnau.org"^^xsd:anyURI ;
+.
+
 tk:attribution a skos:Concept,
         odrl:Policy,
         lcont:TKLabel ;
@@ -30,7 +35,9 @@ tk:attribution a skos:Concept,
             odrl:duty [ a odrl:Duty ;
                     dcterms:description "Indicates that attribution of the correct sources, custodians, or owners should be known." ;
                     odrl:action odrl:attribute ;
-                    odrl:attributedParty "custodians or owners"@en ] ] ;
+                    odrl:attributedParty "custodians or owners"@en 
+                    ]
+                 ] ;
     lcont:relatedNotice lcn:attribution-incomplete ;
     lcont:templateText "This Label is being used to correct historical mistakes or exclusions pertaining to this material. This is especially in relation to the names of the people involved in performing or making this work and/or correctly naming the community from which it originally derives. As a user you are being asked to also apply the correct attribution in any future use of this work."@en ;
     sdo:citation "https://localcontexts.org/label/tk-attribution/"^^xsd:anyURI .
@@ -50,7 +57,8 @@ tk:commercial a skos:Concept,
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that commercialization opportunities may be derived from cultural material."@en ;
             odrl:action odrl:commercialize ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:open-to-collaborate ;
     lcont:templateText "This Label is being used to indicate that [community name or authorized party] is open to commercialization opportunities that might derive from any cultural material with traditional knowledge to which this Label is connected to. As a primary party for any partnership and collaboration opportunities that emerge from the use of this cultural material and traditional knowledge, we retain an expressed interest in any future negotiations."@en ;
     sdo:citation "https://localcontexts.org/label/tk-commercial/"^^xsd:anyURI .
@@ -72,7 +80,9 @@ tk:community-voice a skos:Concept,
             odrl:duty [ a odrl:Duty ;
                     dcterms:description "Indicates that community members are encouraged to share their knowledge, stories and experiences." ;
                     odrl:action odrl:share ;
-                    odrl:assignee "community members" ] ] ;
+                    odrl:assignee "community members" 
+                    ]
+                 ] ;
     lcont:templateText "This Label is being used to encourage the sharing of stories and voices about this material. The Label indicates that existing knowledge or descriptions are incomplete or partial. Any community member is invited and welcome to contribute to our community knowledge about this event, photograph, recording or heritage item. Sharing our voices helps us reclaim our histories and knowledge. This sharing is an internal process."@en ;
     sdo:citation "https://localcontexts.org/label/tk-community-voice/"^^xsd:anyURI .
 
@@ -92,7 +102,9 @@ tk:creative a skos:Concept,
             odrl:action odrl:use ;
             odrl:duty [ a odrl:Duty ;
                     dcterms:description "See template text."@en ;
-                    odrl:action lcont:followProtocol ] ] ;
+                    odrl:action lcont:followProtocol 
+                    ] 
+                ] ;
     lcont:relatedNotice lcn:attribution-incomplete ;
     lcont:templateText "This Label is being used to acknowledge the relationship between the creative practices of [name] and [community name] and the associated cultural responsibilities."@en ;
     sdo:citation "https://localcontexts.org/label/tk-creative/"^^xsd:anyURI .
@@ -119,7 +131,9 @@ Please treat information and photographs marked with this label with special car
             odrl:action odrl:use ;
             odrl:duty [ a odrl:Duty ;
                     dcterms:description "Indicates that material has special sensitivities."@en ;
-                    odrl:action lcont:followProtocol ] ] ;
+                    odrl:action lcont:followProtocol 
+                    ]
+                 ] ;
     lcont:relatedNotice lcn:caring ;
     lcont:templateText "This Label is being used to indicate that this material has cultural and/or historical sensitivities. The Label asks for care to be taken when this material is accessed, used, and circulated, especially when materials are first returned or reunited with communities of origin. In some instances, this Label will indicate that there are specific permissions for use of this material required directly from the community itself."@en ;
     sdo:citation "https://localcontexts.org/label/tk-culturally-sensitive/"^^xsd:anyURI .
@@ -138,7 +152,8 @@ tk:men-general a skos:Concept,
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that material circulating may be shared between men in the community."@en ;
             odrl:assignee "men in the community"@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:gender-aware ;
     lcont:templateText "This material has specific gender restrictions on access. It is usually only to be accessed and used by men in the community. If you are not from the community and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others without permission. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ;
     sdo:citation "https://localcontexts.org/label/tk-men-general/"^^xsd:anyURI .
@@ -157,7 +172,8 @@ tk:men-restricted a skos:Concept,
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that material circulating may be shared between authorized and/or initiated men in the community"@en ;
             odrl:assignee "men in the community"@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:gender-aware ;
     lcont:templateText "This material has specific gender restrictions on access. It is regarded as important secret and/or ceremonial material that has community-based laws in relation to who can access it. Given its nature it is only to be accessed and used by authorized [and/or initiated] men in the community. If you are an external third party user and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others. This material is not freely available within the community and it therefore should not be considered freely available outside of the community. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ;
     sdo:citation "https://localcontexts.org/label/tk-men-restricted/"^^xsd:anyURI .
@@ -179,7 +195,9 @@ tk:multiple-communities a skos:Concept,
             odrl:duty [ a odrl:Duty ;
                     dcterms:description "Indicates that multiple communities have responsibilities of custodianship and/or ownership over specific material." ;
                     odrl:action odrl:attribute ;
-                    odrl:attributedParty "multiple communities"@en ] ] ;
+                    odrl:attributedParty "multiple communities"@en 
+                    ]
+                 ] ;
     lcont:relatedNotice lcn:attribution-incomplete ;
     lcont:templateText "Responsibility and ownership over this material is spread across several distinct communities. Use will be dependent upon discussion and negotiation with the multiple communities named herein [insert names]. Decisions about use will need to be decided collectively. As an external user of this material you are asked to recognize and respect cultural protocols in relation to the use of this material and clear your intended use with the relevant communities."@en ;
     sdo:citation "https://localcontexts.org/label/tk-multiple-communities/"^^xsd:anyURI .
@@ -200,7 +218,8 @@ tk:non-commercial a skos:Concept,
     odrl:prohibition [ a odrl:Prohibition ;
             dcterms:description "Indicates that commercialization opportunities may not be derived from cultural material"@en ;
             odrl:action odrl:commercialize ;
-            odrl:purpose odrl:prohibit ] ;
+            odrl:purpose odrl:prohibit 
+            ] ;
     lcont:relatedNotice lcn:open-to-collaborate ;
     lcont:templateText "This material has been designated as being available for non-commercial use. You are allowed to use this material for non-commercial purposes including for research, study, or public presentation and/or online in blogs or non-commercial websites. This Label asks you to think and act with fairness and responsibility towards this material and the original custodians."@en ;
     sdo:citation "https://localcontexts.org/label/tk-non-commercial/"^^xsd:anyURI .
@@ -221,7 +240,9 @@ tk:non-verified a skos:Concept,
             odrl:action odrl:use ;
             odrl:duty [ a odrl:Duty ;
                     dcterms:description "Indicates that material has not been verified by the community."@en ;
-                    odrl:action lcont:followProtocol ] ] ;
+                    odrl:action lcont:followProtocol 
+                    ]
+                 ] ;
     lcont:relatedNotice lcn:attribution-incomplete ;
     lcont:templateText "This Label is being used because there are concerns about accuracy and/or representations made in this material. This material was not created through informed consent or community protocols for research and engagement. Therefore, questions about its accuracy and who/how it represents this community are being raised."@en ;
     sdo:citation "https://localcontexts.org/label/tk-non-verified/"^^xsd:anyURI .
@@ -241,7 +262,8 @@ tk:open-to-collaboration a skos:Concept,
     skos:topConceptOf tkcs: ;
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that materials may be open to research collaborations."@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:open-to-collaborate ;
     lcont:templateText "This Label is being used to make clear [community name or authorizing body] is open to future engagement, collaboration, and partnership around research opportunities."@en ;
     sdo:citation "https://localcontexts.org/label/tk-open-to-collaboration/"^^xsd:anyURI .
@@ -261,7 +283,8 @@ tk:outreach a skos:Concept,
     skos:topConceptOf tkcs: ;
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that materials may be used for educational outreach activities."@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:open-to-collaborate ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material can be used for educational outreach activities. This Label asks you to respect the designated circulation conditions for this material and additionally, where possible, to develop a means for fair and equitable reciprocal exchange for the use of this material with the relevant TK holders. This exchange might include access to educational or other resources that are difficult to access under normal circumstances."@en ;
     sdo:citation "https://localcontexts.org/label/tk-outreach/"^^xsd:anyURI .
@@ -280,7 +303,8 @@ tk:seasonal a skos:Concept,
     skos:topConceptOf tkcs: ;
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that material has seasonal conditions of access and use."@en ;
-            odrl:purpose odrl:event ] ;
+            odrl:purpose odrl:event 
+            ] ;
     lcont:templateText "This Label is being used to indicate that this material traditionally and usually is heard and/or utilized at a particular time of year and in response to specific seasonal changes and conditions. For instance, many important ceremonies are held at very specific times of the year. This Label is being used to indicate sophisticated relationships between land and knowledge creation. It is also being used to highlight the relationships between recorded material and the specific contexts where it derives, especially the interconnected and embodied teachings that it conveys."@en ;
     sdo:citation "https://localcontexts.org/label/tk-seasonal/"^^xsd:anyURI .
 
@@ -299,7 +323,8 @@ tk:secret-sacred a skos:Concept,
     odrl:duty [ a odrl:Duty ;
             dcterms:description "Indicates that external users shall discuss potential use of materials."@en ;
             odrl:assignee "external users"@en ;
-            odrl:purpose odrl:obtainConsent ] ;
+            odrl:purpose odrl:obtainConsent 
+            ] ;
     lcont:relatedNotice lcn:leave-undisturbed,
         lcn:viewing,
         lcn:withholding ;
@@ -323,7 +348,9 @@ tk:verified a skos:Concept,
             odrl:action odrl:use ;
             odrl:duty [ a odrl:Duty ;
                     dcterms:description "Indicates satisfaction with the way traditional knowledge materials are being represented."@en ;
-                    odrl:action lcont:followProtocol ] ] ;
+                    odrl:action lcont:followProtocol 
+                    ] 
+                ] ;
     lcont:templateText "This Label affirms that the representation and presentation of this material is in keeping with community expectations and cultural protocols. It lets you know that for the individual, family or community represented in this material, use is considered fair, reasonable and respectful."@en ;
     sdo:citation "https://localcontexts.org/label/tk-verified/"^^xsd:anyURI .
 
@@ -360,7 +387,8 @@ tk:women-restricted a skos:Concept,
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that material circulating may be shared between authorized and/or initiated women within the community."@en ;
             odrl:assignee "women in the community"@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:gender-aware ;
     lcont:templateText "This material has specific gender restrictions on access. It is regarded as important secret and/or ceremonial material that has community-based laws in relation to who can access it. Given its nature it is only to be accessed and used by authorized [and/or initiated] women in the community. If you are an external third party user and you have accessed this material, you are requested to not download, copy, remix or otherwise circulate this material to others. This material is not freely available within the community and it therefore should not be considered freely available outside of the community. This Label asks you to think about whether you should be using this material and to respect different cultural values and expectations about circulation and use."@en ;
     sdo:citation "https://localcontexts.org/label/tk-women-restricted/"^^xsd:anyURI .
@@ -382,7 +410,8 @@ tk:clan a skos:Concept,
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that material circulating may be shared between clan members and/or according to protocols for clan relationships."@en ;
             odrl:assignee "clan"@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:belonging ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."@en ;
     sdo:citation "https://localcontexts.org/label/tk-clan/"^^xsd:anyURI .
@@ -405,7 +434,8 @@ If you have questions or wish to do research with a specific family please conta
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that material circulating may be shared between family."@en ;
             odrl:assignee "family"@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:belonging ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for sharing between family members. Who these family members are, and how sharing occurs will be defined in each locale. This material is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use."@en ;
     sdo:citation "https://localcontexts.org/label/tk-family/"^^xsd:anyURI .
@@ -428,7 +458,8 @@ tk:community-use-only a skos:Concept,
     odrl:permission [ a odrl:Permission ;
             dcterms:description "Indicates that material circulating may be shared between family, clan or community."@en ;
             odrl:assignee "community"@en ;
-            odrl:purpose odrl:grantUse ] ;
+            odrl:purpose odrl:grantUse 
+            ] ;
     lcont:relatedNotice lcn:belonging ;
     lcont:templateText "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label is correcting a misunderstanding about the circulation options for this material and letting any users know that this material has specific conditions for circulation within the community. It is not, and never was, free, public, or available for everyone at anytime. This Label asks you to think about how you are going to use this material and to respect different cultural values and expectations about circulation and use."@en ;
     sdo:citation "https://localcontexts.org/label/tk-community-use-only/"^^xsd:anyURI .
@@ -441,7 +472,7 @@ tkcs: a skos:ConceptScheme ;
     dcterms:provenance "This vocabulary was generated from the https://localcontexts.org website's content: https://localcontexts.org/labels/traditional-knowledge-labels/" ;
     dcterms:publisher idn: ;
     owl:versionInfo "1.1" ;
-    skos:definition "Traditional Knowledge (TK) labels \\"support the inclusion of local protocols for access and use to cultural heritage that is digitally circulating outside community contexts\\". This vocabulary is a SKOS-based listing of those labels so they can be accessed in RDF graph-based systems."@en ;
+    skos:definition "Traditional Knowledge (TK) labels support the inclusion of local protocols for access and use to cultural heritage that is digitally circulating outside community contexts. This vocabulary is a SKOS-based listing of those labels so they can be accessed in RDF graph-based systems."@en ;
     skos:hasTopConcept tk:attribution,
         tk:clan,
         tk:commercial,
