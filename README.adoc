@@ -2,7 +2,7 @@
 
 This repository contains https://localcontexts.org[Local Context] labels as Semantic Web vocabularies, as used by the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)].
 
-The IDN applies Local Context labels and to datasets related to Indigenous people to improve dataset metadata and, ultimately, improved Indigenous data governance.
+The IDN applies Local Context labels and to datasets related to Indigenous people to improve dataset metadata and, ultimately, improved Indigenous data governance. The 'things' we are targetting with these vocabularies and ontology are catalogued according to the https://data.idnau.org/pid/cp[Indigenous Data Network Catalogue Profile], but Local Context metadata can be applied in other cataloguing profiles and standards.
 
 The two label vocabularies, _Traditional Knowledge Labels_ (TK) and _Biocultural Labels_ (BC) are online with persistent web identifiers:
 
