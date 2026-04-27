@@ -1,19 +1,19 @@
-= Local Context Labels Vocabularies and Ontology
+= Local Context Vocabularies and Ontology
 
 This repository contains https://localcontexts.org[Local Context] labels as Semantic Web vocabularies, as used by the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)].
 
-The IDN applies Local Context labels and to datasets related to indigenous people to improve dataset metadata and, ultimately, improved indigenous data governance.
+The IDN applies Local Context labels and to datasets related to Indigenous people to improve dataset metadata and, ultimately, improved Indigenous data governance.
 
-The two labels vocabularies, Traditional Knowledge (TK) and Biocultural (BC) Labels are online with persistent web identifiers at:
+The two label vocabularies, _Traditional Knowledge Labels_ (TK) and _Biocultural Labels_ (BC) are online with persistent web identifiers:
 
 * **https://data.idnau.org/pid/vocab/tk-labels**
 * **https://data.idnau.org/pid/vocab/bc-labels**
 
-The labels are linked, where relevant, to Local Context Notices, which are online with persistent web identifiers at:
+The labels are linked, where relevant, to _Local Context Notices_, which are online with persistent web identifiers:
 
 * **https://data.idnau.org/pid/vocab/lc-notices**
 
-The Labels, Notice and other supporting classes and properties are define in the Local Context Labels Extension Vocabulary:
+The Labels, Notices and supporting classes and properties are defined in the _Local Context Labels Extension Vocabulary_:
 
 * **https://data.idnau.org/pid/lc-ont#**
 
